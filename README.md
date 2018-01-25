@@ -16,7 +16,7 @@ Optional Yearbook Collaboration for Udacity Front-End Scholarship Participants
 This is the unofficial repo for a class project/website created and maintained by the class members of Grow With Google and Udacity 2018.  The boiler plate code has been added.  Feel free to make pull requests at will. Happy coding!
 
 
-To contribute, simply make a pull request or fork this repo and work on it that way.  Alternatively, you can pull files to your local environment (your computer) and work on them that way.  If you have any questions please let sgstokes006, <a href="https://github.com/JS-goose">js-goose</a>, or any of the other collaborators know.  
+To contribute, simply make a pull request or fork this repo and work on it that way.  Alternatively, you can pull files to your local environment (your computer) and work on them that way.  If you have any questions please let sgstokes006, <a href="https://github.com/JS-goose">js-goose</a>, <a href="https://github.com/KatFrog">KatFrog</a> or any of the other collaborators know.  
 
 If you are looking for resources to learn GitHub, check out this short <a href="https://www.google.com/search?q=learning+to+use+github&oq=learning+to+use+git&aqs=chrome.1.69i57j0.4127j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=0">video</a> or this <a href="https://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html">blog post from Udacity</a> for more info.
 
