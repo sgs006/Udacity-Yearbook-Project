@@ -27,5 +27,7 @@ The Resources Page now has a basic html structure. It is ready for contributions
 
 Subheadings need to be `<h2>` and have the class "subheading". Every subheading needs to have an `<ol>` with `<li>` items so we can keep it looking organized and numbered.
 
+Make sure your links look like this `<a href = "https://codepen.io/" target="_blank">CodePen</a>` so that they open on a new page. 
+
 Of course this is all subject to change based on what the community wants to do with the pages. Just getting us started for now. 
 
