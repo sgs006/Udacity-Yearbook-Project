@@ -25,7 +25,7 @@ Happy coding!
 -- 1/25/18 --
 The Resources Page now has a basic html structure. It is ready for contributions from the community. Feel free to add links to your favorite resources and a small description if you would like to. 
 
-Subheadings need to be <h2> and have the class "subheading". Every subheading needs to have an <ol> with <li> items so we can keep it looking organized and numbered.
+Subheadings need to be `<h2>` and have the class "subheading". Every subheading needs to have an `<ol>` with `<li>` items so we can keep it looking organized and numbered.
 
 Of course this is all subject to change based on what the community wants to do with the pages. Just getting us started for now. 
 
