@@ -1,9 +1,5 @@
-#nav{
-    list-style-type: none;
-    margin: 0; 
-    padding-right: 3px;
-}
-#nav ul li{
+
+.topnav{
     dispaly: inline;
 }
 
