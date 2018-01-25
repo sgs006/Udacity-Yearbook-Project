@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* CSS Styles for YearBook Page. Please use an id for your section and not a class. This will be your own unique space to style how you want.*/
 
 #samstokes{
-    background: black;
+    background-color: black;
 }
 
 #samstokesname{
