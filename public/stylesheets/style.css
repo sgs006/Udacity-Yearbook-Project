@@ -6,3 +6,28 @@
 h1, h2, h3, h4, h5, h6, p {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* CSS Styles for YearBook Page. Please use an id for your section and not a class. This will be your own unique space to style how you want.*/
+
+#samstokes{
+    background: black;
+}
+
+#samstokesname{
+    font-weight: bold;
+    color: white;
+}
+    
+    
+
+
