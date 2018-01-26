@@ -1,3 +1,4 @@
+/* master */
 body {
 	margin: 0;
 }
@@ -78,6 +79,23 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
     font-family: Arial, Helvetica, sans-serif;
+=======
+
+.topnav{
+    dispaly: inline;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+/* master */
 }
 
 
@@ -100,11 +118,14 @@ h1, h2, h3, h4, h5, h6, p {
     
 }
 
+/* master
 
 .intro {
 	color: red;
 }
 
+=======
+/* master
     
 
 
