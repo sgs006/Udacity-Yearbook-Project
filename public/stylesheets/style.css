@@ -66,44 +66,8 @@ body {
 *****************************************************************************************/
 
 
-
-
-
-
-
-
-
-
-
-
-
 h1, h2, h3, h4, h5, h6, p {
     font-family: Arial, Helvetica, sans-serif;
-=======
-
-.topnav{
-    dispaly: inline;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a:link {
-  color: blue;
-  text-decoration: none;
-}
-a:visited {
-  color: purple;
-/* master */
-}
-
-
-
-
-
-
-
 
 
 /* CSS Styles for YearBook Page. Please use an id for your section and not a class. This will be your own unique space to style how you want.*/
