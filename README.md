@@ -21,3 +21,13 @@ To contribute, simply make a pull request or fork this repo and work on it that 
 If you are looking for resources to learn GitHub, check out this short <a href="https://www.google.com/search?q=learning+to+use+github&oq=learning+to+use+git&aqs=chrome.1.69i57j0.4127j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=0">video</a> or this <a href="https://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html">blog post from Udacity</a> for more info.
 
 Happy coding!
+
+-- 1/25/18 --
+The Resources Page now has a basic html structure. It is ready for contributions from the community. Feel free to add links to your favorite resources and a small description if you would like to. 
+
+Subheadings need to be `<h2>` and have the class "subheading". Every subheading needs to have an `<ol>` with `<li>` items so we can keep it looking organized and numbered.
+
+Make sure your links look like this `<a href = "https://codepen.io/" target="_blank">CodePen</a>` so that they open on a new page. 
+
+Of course this is all subject to change based on what the community wants to do with the pages. Just getting us started for now. 
+
