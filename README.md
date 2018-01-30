@@ -2,7 +2,7 @@
 Optional Yearbook Collaboration for Udacity Front-End Scholarship Participants
 
 <p><strong>Question: What is this?</strong></p>
-<p><strong>Answer:</strong> We aren't 100% sure yet.  What we do know is that we wanted to collaborate on a project together.  If that mean's we end up creating a website with a collage of all the projects that's awesome.  If we end up creating an amalgamation of HTML/CSS/JS and want to show it off, that's great also!</p>  
+<p><strong>Answer:</strong> It is a yearbook project to show off our cohort of the GWG program.</p>
 
 <p><strong>Question: Can I contribute?</strong></p>
 <p><strong>Answer:</strong> Of course you can!  No matter what your experience/knowledge level is we encourage everyone to contribute.</p>
@@ -30,4 +30,14 @@ Subheadings need to be `<h2>` and have the class "subheading". Every subheading 
 Make sure your links look like this `<a href = "https://codepen.io/" target="_blank">CodePen</a>` so that they open on a new page. 
 
 Of course this is all subject to change based on what the community wants to do with the pages. Just getting us started for now. 
+
+--1/29/18 --
+
+We are staring to get into the nitty gritty for the site and we need to make some decisions on how to build it. 
+
+1) The framework is going to be Bootstrap v4. I know not everyone has experience with this, but for those that do it will probably make creating the pages much easier. So we are going with that and hoping our more experienced people can help guide us. 
+
+2) Unless I hear any objections we are going to go with a color scheme of mainly white and blue. The color scheme used on the Udacity website. We are hoping to achive a smiliar style to that website for continuity. 
+
+3) I'm hoping a mockup comes soon. Will keep you posted. 
 
