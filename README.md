@@ -10,7 +10,13 @@ Optional Yearbook Collaboration for Udacity Front-End Scholarship Participants
 <p><strong>Question: Where do I begin?</strong></p>
 <p><strong>Answer:</strong> Start off by forking this repo and making changes.  Do whatever it is you want...build upon the boiler plate code, or throw in some JS and link them up to the index...the point is this is about learning, growing, and getting experience as a team :)  Feel free to make edits/contributions to anything!</p>
 
-<strong>--1/29/18 --</strong>
+<strong>-- 1/30/18 --</strong>
+We created a Trello page to help plan the project a bit. Here is the invite link <a href="https://trello.com/invite/b/BhcQyBcF/2252be83e5f70f6384200fda77035865/udacity-yearbook-site">Trello</a>
+
+You can see our landing page mockup there, give input on the project, and assign yourself tasks. 
+
+
+<strong>-- 1/29/18 --</strong>
 We are staring to get into the nitty gritty for the site and we need to make some decisions on how to build it. 
 
 1) The framework is going to be Bootstrap v4. I know not everyone has experience with this, but for those that do it will probably make creating the pages much easier. So we are going with that and hoping our more experienced people can help guide us. 
