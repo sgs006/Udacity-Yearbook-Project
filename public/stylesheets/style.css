@@ -346,18 +346,3 @@ END YEARBOOK CARD DESIGN SECTION HERE
 
 
 
-/*********************************************************************************************************************
-	CSS Styles for YearBook Page.
-	Guide:	Please use an id for your section and not a class. This will be your own unique space to style how you want.
-**********************************************************************************************************************/
-.pagetitle {
-    margin: 10px;
-}
-
-.intro {
-	margin: 10px;
-}
-
-.yearbook-section {
-    margin: 10px;
-}

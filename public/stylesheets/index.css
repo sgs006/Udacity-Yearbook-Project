@@ -143,6 +143,10 @@ button:hover {
   margin-left: 5px;
 }
 
+.rss-content h3{
+  text-align: center;	
+}
+
 .rss-content p {
 	font-size: 12px;
 	margin-top: 10px;
