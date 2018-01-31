@@ -10,7 +10,7 @@ Optional Yearbook Collaboration for Udacity Front-End Scholarship Participants
 <p><strong>Answer:</strong> Of course you can!  No matter what your experience/knowledge level is we encourage everyone to contribute.</p>
 
 #### Question: Where do I begin?
-Grab a task from the Trello site here: href="https://trello.com/invite/b/BhcQyBcF/2252be83e5f70f6384200fda77035865/udacity-yearbook-site">Trello Udacity YearBook Project.</a> This way we can avoid repetative work. Once you have a task, fork this repo and make changes.  Do whatever it is you want...build upon the boiler plate code, or throw in some JS and link them up to the index...the point in this is about learning, growing, and getting experience as a team :)  Feel free to make edits/contributions to anything! Just don't delete or change someone elses work unless it is for fixes. We don't want someone to create a menu for example and then have it deleted.</p>
+Grab a task from the Trello site here: <a href="https://trello.com/invite/b/BhcQyBcF/2252be83e5f70f6384200fda77035865/udacity-yearbook-site">Trello Udacity YearBook Project.</a> This way we can avoid repetative work. Once you have a task, fork this repo and make changes.  Do whatever it is you want...build upon the boiler plate code, or throw in some JS and link them up to the index...the point in this is about learning, growing, and getting experience as a team :)  Feel free to make edits/contributions to anything! Just don't delete or change someone elses work unless it is for fixes. We don't want someone to create a menu for example and then have it deleted.</p>
 
 #### Project Requirements  
 - An Editing Software (Vscode, Sublime, Atom)
