@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf 8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Udacity Community Yearbook</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- ======== CSS STYLESHEETS INCLUDING BOOTSTRAP 4 (https://getbootstrap.com) AND OPEN SANS FONT FROM GOOGLE ========= -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700">
-    <link rel="stylesheet" href="public/stylesheets/reboot.css">
-    <link rel="stylesheet" href="public/stylesheets/style.css">
-    <link rel="stylesheet" href="public/stylesheets/index.css">
-    <!-- ===================== END CSS STYLESHEETS ========== -->
-
 
     <!-- ========= WEBSITES META INFORMATION INCLUDING STATUS BAR COLOR FOR MOBILE BROWSERS ========== -->
     <meta name="description" content="Grow with Google Scholarship 2018 - Udacity Community Yearbook. Yearbook project for 2018 GwG Cohort.">
@@ -22,7 +13,6 @@
     <meta name="theme-color" content="#00B3E4">
     <meta name="apple-mobile-web-app-status-bar-style" content="#00B3E4" />
       <!-- ===================== END WEBSITE META INFORMATION ========== -->
-
 
     <!-- ============= SOCIAL MEDIA META PROPERTIES ================== -->
     <meta property="og:locale" content="en_US" />
@@ -35,16 +25,30 @@
     <meta name="twitter:title" content="Udacity Community Yearbook. Grow with Google Scholarship 2018." />
       <!-- ===================== END SOCIAL MEDIA META ========== -->
 
-
+    <!-- ======== CSS STYLESHEETS INCLUDING BOOTSTRAP 4 (https://getbootstrap.com) AND OPEN SANS FONT FROM GOOGLE ========= -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700">
+    <link rel="stylesheet" href="public/stylesheets/reboot.css">
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="public/stylesheets/index.css">
+    <!-- ===================== END CSS STYLESHEETS ========== -->
   </head>
   <body>
+  <!-- ========  SKIP NAVIGATION NEEDED FOR SCREEN READERS ============ -->
+  <!-- SKIP NAV -->
+  <div id="skiplink" class="sr-only sr-only-focusable">
+    <a href="#MainContent">skip to page content</a>
+  </div>
+  <!-- =========== END SKIP NAVIGATION NEEDED FOR SCREEN READERS ============ -->
+
     <!-- ========  WEBSITE NAVIGATION SECTION ============ -->
-    <nav class="topnav" id="myTopnav">
-      <a href="index.html">Home</a>
-      <a href="yearbook.html">YearBook</a>
-      <a href="resources.html">Resources</a>
-      <a href="cssart.html">CSS Art Projects</a>
-      <a href="about.html">About</a>
+    <nav id="MainNav" class="topnav">
+      <a href="index.html" title="Home">Home</a>
+      <a href="yearbook.html" title="YearBook">YearBook</a>
+      <a href="resources.html" title="Resources" title="">Resources</a>
+      <a href="cssart.html" title="CSS Art Projects">CSS Art Projects</a>
+      <a href="about.html" title="About">About</a>
       <a href="javascript:void(0);" class="icon">&#9776;</a>
     </nav>
     <!-- =========== END WEBSITE NAVIGATION PANE ============ -->
@@ -64,20 +68,19 @@
 
 
 
-
     <!-- ================== INTRODUCTION SECTION GRID 3X3 ========================= -->
-  	<div class="section main">
+  	<div id="MainContent" class="section main">
   	<p>Two plus two is four, minus one that's three quick math. your girlfriend is lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <div class="main-grid">
-    			<a class="main-thumb" href="#"><img class="" src="https://randomuser.me/api/portraits/men/52.jpg" width="100%" ></a>
-    			<a class="main-thumb" href="#"><img class="" src="https://randomuser.me/api/portraits/men/62.jpg" width="100%" ></a>
-    			<a class="main-thumb" href="#"><img class="" src="https://randomuser.me/api/portraits/women/37.jpg" width="100%" ></a>
-    			<a class="main-thumb" href="#"><img class="" src="https://randomuser.me/api/portraits/women/34.jpg" width="100%" ></a>
-    			<a class="main-thumb" href="#"><img class="" src="https://randomuser.me/api/portraits/men/72.jpg" width="100%" ></a>
-    			<a class="main-thumb" href="#"><img class="" src="https://randomuser.me/api/portraits/women/32.jpg" width="100%" ></a>
-    			<a class="main-thumb" href="#"><img class="" src="https://randomuser.me/api/portraits/men/52.jpg" width="100%" ></a>
-    			<a class="main-thumb" href="#"><img class="" src="https://randomuser.me/api/portraits/women/34.jpg" width="100%" ></a>
-    			<a class="main-thumb" href="#"><img class="" src="https://randomuser.me/api/portraits/men/22.jpg" width="100%" ></a>
+    			<a class="main-thumb" href="#" title="Men"><img class="" src="https://randomuser.me/api/portraits/men/52.jpg" width="100%" alt="Picture of Men"></a>
+    			<a class="main-thumb" href="#" title="Men"><img class="" src="https://randomuser.me/api/portraits/men/62.jpg" width="100%" alt="Picture of Men"></a>
+    			<a class="main-thumb" href="#" title="Women"><img class="" src="https://randomuser.me/api/portraits/women/37.jpg" width="100%" alt="Picture of Women"></a>
+    			<a class="main-thumb" href="#" title="Women"><img class="" src="https://randomuser.me/api/portraits/women/34.jpg" width="100%" alt="Picture of Women"></a>
+    			<a class="main-thumb" href="#" title="Men"><img class="" src="https://randomuser.me/api/portraits/men/72.jpg" width="100%" alt="Picture of Men"></a>
+    			<a class="main-thumb" href="#" title="Women"><img class="" src="https://randomuser.me/api/portraits/women/32.jpg" width="100%" alt="Picture of Women"></a>
+    			<a class="main-thumb" href="#" title="Men"><img class="" src="https://randomuser.me/api/portraits/men/52.jpg" width="100%" alt="Picture of Men"></a>
+    			<a class="main-thumb" href="#" title="Women"><img class="" src="https://randomuser.me/api/portraits/women/34.jpg" width="100%" alt="Picture of Women"></a>
+    			<a class="main-thumb" href="#" title="Men"><img class="" src="https://randomuser.me/api/portraits/men/22.jpg" width="100%" alt="Picture of Men"></a>
     		</div>
     		<a class="button" href="#">view full class list</a>
     	</div>
@@ -85,14 +88,17 @@
 
 
 
-
-
       <!-- ========= SECTION HEADER WITH GRADIENT ======================== -->
-    	<div class="section-head bluegreen-gradient">
-    		<h1>Resources</h1>
-    		<h4>websites that has helped us along the way</h4>
-    	</div>
+      <div class="container-fluid">
+        <div class="row" role="row">
+          <div class="section-head bluegreen-gradient">
+            <h1>Resources</h1>
+            <h4>websites that has helped us along the way</h4>
+          </div>
+        </div>
+      </div>
       <!-- ================= END SECTION HEADER ============================= -->
+
 
 
       <!-- =============== START GRID FOR RSS-RESOURCE SECTION ======================= -->
@@ -189,7 +195,6 @@
       				  <p>Lorem ipsum dolor sit amet, doctus eruditi pro et, erat dolore senserit cu pri. Ut primis animal accusam nec, ei vix primis nominavi qualisque. doctus eruditi pro et, erat dolore senserit cu pri. Ut primis animal accusam nec, ei vix primis nominavi qualisque </p>
       			</div>
 
-
             <div class="col-md-6 col-sm-12 art--columns-content">
               <h3 class="">Some Title Here</h3>
                 <p>Lorem ipsum dolor sit amet, doctus eruditi pro et, erat dolore senserit cu pri. Ut primis animal accusam nec, ei vix primis nominavi qualisque. doctus eruditi pro et, erat dolore senserit cu pri. Ut primis animal accusam nec, ei vix primis nominavi qualisque </p>
@@ -225,7 +230,7 @@
                                   <img src="public/images/rotating_card_thumb1.png"/>
                               </div>
                               <div class="user">
-                                  <img class="rounded-circle" src="https://randomuser.me/api/portraits/women/43.jpg"/>
+                                  <img class="rounded-circle" src="https://randomuser.me/api/portraits/women/43.jpg" alt="Women picture"/>
                               </div>
                               <div class="content">
                                   <div class="main">
@@ -267,9 +272,9 @@
                               </div>
                               <div class="footer">
                                   <div class="social-links text-center">
-                                      <a href="#" class="github"><i class="fa fa-github fa-fw"></i></a>
-                                      <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                      <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                      <a href="#" class="github" title="Carlota Peral Github"><i class="fa fa-github fa-fw"></i></a>
+                                      <a href="#" class="google" title="Carlota Peral Google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                      <a href="#" class="twitter" title="Carlota Peral Twitter"><i class="fa fa-twitter fa-fw"></i></a>
                                   </div>
                               </div>
                           </div> <!-- end back panel -->
@@ -286,7 +291,7 @@
                                   <img src="public/images/rotating_card_thumb2.png"/>
                               </div>
                               <div class="user">
-                                  <img class="rounded-circle" src="https://randomuser.me/api/portraits/men/12.jpg"/>
+                                  <img class="rounded-circle" src="https://randomuser.me/api/portraits/men/12.jpg" alt="Men picture"/>
                               </div>
                               <div class="content">
                                   <div class="main">
@@ -329,9 +334,9 @@
                               </div>
                               <div class="footer">
                                   <div class="social-links text-center">
-                                      <a href="https://github.com/sgs006" target="_blank" class="github"><i class="fa fa-github fa-fw"></i></a>
-                                      <a href="#"class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                      <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                      <a href="https://github.com/sgs006" target="_blank" class="github" title="Sam Stokes Github @sgs006 "><i class="fa fa-github fa-fw"></i></a>
+                                      <a href="#"class="google" title="Sam Stokes Google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                      <a href="#" class="twitter" title="Sam Stokes Twitter"><i class="fa fa-twitter fa-fw"></i></a>
                                   </div>
                               </div>
                           </div> <!-- end back panel -->
@@ -348,7 +353,7 @@
                                   <img src="public/images/rotating_card_thumb3.png"/>
                               </div>
                               <div class="user">
-                                  <img class="rounded-circle" src="https://randomuser.me/api/portraits/women/32.jpg"/>
+                                  <img class="rounded-circle" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Women picture"/>
                               </div>
                               <div class="content">
                                   <div class="main">
@@ -397,9 +402,9 @@
                               </div>
                               <div class="footer">
                                   <div class="social-links text-center">
-                                      <a href="https://github.com/mohampton" target="_blank" class="github"><i class="fa fa-github fa-fw"></i></a>
-                                      <a href="#"class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                      <a href="https://twitter.com/moxiehampton" target="_blank" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                      <a href="https://github.com/mohampton" target="_blank" class="github" title="Mo Hampton Github @mohampton"><i class="fa fa-github fa-fw"></i></a>
+                                      <a href="#" class="google" title="Mo Hampton Google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                      <a href="https://twitter.com/moxiehampton" target="_blank" class="twitter" title="Mo Hampton Twitter @moxiehampton"><i class="fa fa-twitter fa-fw"></i></a>
                                   </div>
                               </div>
                           </div> <!-- end back panel -->
@@ -407,7 +412,7 @@
                   </div> <!-- end card-container -->
                 </div> <!--end col-sm-6 -->
 
-      <!-- <div class="col-sm-1"></div> -->
+              <!-- <div class="col-sm-1"></div> -->
               </div> <!-- end row -->
           </div> <!-- end container-->
 
@@ -415,11 +420,25 @@
 
 
 
+          <!-- ====================== FOOTER ============= -->
+          <div class="container-fluid">
+            <footer id="footer">
+             <footer id="footer">All rights reserved. Designed and developed by Grow With Google Scholars 2018.</footer>
+            </footer>
+          </div>
+          <!-- ====================== END FOOTER ============= -->
+
 
       <footer id="footer">All rights reserved. Designed and developed by Grow With Google Scholars 2018.</footer>
-      <!-- ======== JQUERY | BOOTSTRAP AND PROJECT SCRIPTS AT THE FOOTER ========= -->
-      <script type="text/javascript" src="public/lib/jquery-3.3.1.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <!-- ======== jQuery first, then Popper.js, then Bootstrap JS | BOOTSTRAP AND PROJECT SCRIPTS AT THE FOOTER ========= -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
       <script src="public/scripts/classProject.js"></script>
       <!-- ================= INCLUDING OF SCRIPT FILES END HERE =====================  -->
     </body>
