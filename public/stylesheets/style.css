@@ -8,16 +8,9 @@ body {
 	color: #525c65;
 }
 #footer {
-  color: #e0dcf0;
-  height: 85px;
-  background-color: #aca5cc;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 30px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  color: red;
+  margin: auto;
+  background-color: blue;
 }
 .annotation {
     font-family:-apple-system,BlinkMacSystemFont, "Open Sans","Segoe UI","Ubuntu",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -368,11 +361,3 @@ END YEARBOOK CARD DESIGN SECTION HERE
 .yearbook-section {
     margin: 10px;
 }
-
-
-
-=======
-/* master */
-
-=======
-
