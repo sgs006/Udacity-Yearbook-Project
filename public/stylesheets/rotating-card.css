@@ -1,25 +1,25 @@
 body {
-	font-size: 16px;
-	font-family: "Open Sans";
-	background-color: #E5E9ED;
+    font-size: 16px;
+    font-family: "Open Sans";
+    background-color: #E5E9ED;
 }
 
 .jumbotron {
     background: linear-gradient(90deg, #31C5BD, #A97ECD);
     color: whitesmoke;
 }
+
 .btn:hover,
 .btn:focus,
-.btn:active{
+.btn:active {
     outline: 0 !important;
 }
+
 /* entire container, keeps perspective */
-
-
 
 /*      Just for presentation        */
 
-.title{
+.title {
     color: #506A85;
     text-align: center;
     font-weight: 300;
@@ -27,59 +27,64 @@ body {
     margin-bottom: 90px;
     line-height: 90%;
 }
-.title small{
+
+.title small {
     font-size: 17px;
     color: #999;
     text-transform: uppercase;
     margin: 0;
 }
-.space-30{
-	height: 30px;
-	display: block;
+
+.space-30 {
+    height: 30px;
+    display: block;
 }
-.space-50{
+
+.space-50 {
     height: 50px;
     display: block;
 }
-.space-200{
+
+.space-200 {
     height: 200px;
     display: block;
 }
 
-.btn-simple{
+.btn-simple {
     opacity: .8;
     color: #666666;
     background-color: transparent;
 }
 
 .btn-simple:hover,
-.btn-simple:focus{
+.btn-simple:focus {
     background-color: transparent;
     box-shadow: none;
     opacity: 1;
 }
-.btn-simple i{
+
+.btn-simple i {
     font-size: 16px;
 }
 
-
 /*       Fix bug for IE      */
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .front, .back{
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .front,
+    .back {
         -ms-backface-visibility: visible;
         backface-visibility: visible;
     }
-
     .back {
         visibility: hidden;
-        -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
+        -ms-transition: all 0.2s cubic-bezier(.92, .01, .83, .67);
     }
-    .front{
+    .front {
         z-index: 4;
     }
     .card-container:not(.manual-flip):hover .back,
-    .card-container.manual-flip.hover .back{
+    .card-container.manual-flip.hover .back {
         z-index: 5;
         visibility: visible;
     }
