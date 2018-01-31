@@ -3,7 +3,17 @@ body {
 	margin: 0;
 }
 
-/***********************************************************************
+#footer {
+  color: red;
+  margin: auto;
+  background-color: blue;
+}
+.annotation {
+    font-family:-apple-system,BlinkMacSystemFont, "Open Sans","Segoe UI","Ubuntu",Roboto,"Helvetica Neue",Arial,sans-serif;
+		font-style: italic;
+}
+
+/***************************************************************************************
 	START OF NAVBAR STYLES
 ************************************************************************/
 .topnav {
