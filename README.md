@@ -1,6 +1,6 @@
 # Udacity Yearbook Project
 Optional Yearbook Collaboration for Udacity Front-End Scholarship Participants
-![Home Screenshot](/public/images/mockup/src.png?raw=true)
+![Home Screenshot](public/images/mockups/src.png?raw=true "screenshot")
 
 
 #### Question:  What is this?
