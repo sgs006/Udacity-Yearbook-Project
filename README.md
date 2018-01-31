@@ -20,7 +20,11 @@ Grab a task from the Trello site here: <a href="https://trello.com/invite/b/BhcQ
   - [JQuery 3.3.1]
 
 
+<strong>-- 1/31/18 -- </strong>
+Everyone should update their local copies from the main (this) repo. This will resolve a lot of issues.
 
+People can use this as a guide.
+https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository#answers
 
 
 
