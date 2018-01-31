@@ -2,7 +2,11 @@
 body {
 	margin: 0;
 }
-
+#footer {
+  color: red;
+  margin: auto;
+  background-color: blue;
+}
 .annotation {
     font-family: Arial, Helvetica, sans-serif;
 		font-style: italic;
