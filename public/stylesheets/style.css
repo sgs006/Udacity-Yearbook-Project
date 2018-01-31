@@ -3,7 +3,6 @@ body {
 	margin: 0;
 }
 
-
 /***********************************************************************
 	START OF NAVBAR STYLES
 ************************************************************************/
@@ -20,11 +19,13 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+	text-decoration:none;
 }
 
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+	text-decoration: none;
 }
 
 .active {
