@@ -57,13 +57,29 @@
     <!-- =========== END SKIP NAVIGATION NEEDED FOR SCREEN READERS ============ -->
 
     <!-- ========  WEBSITE NAVIGATION SECTION ============ -->
-    <nav id="MainNav" class="topnav">
-        <a href="index.html" title="Home">Home</a>
-        <a href="yearbook.html" title="YearBook">YearBook</a>
-        <a href="index.html#rss-main" title="Resources" title="">Resources</a>
-        <a href="cssart.html" title="CSS Art Projects">CSS Art Projects</a>
-        <a href="about.html" title="About">About</a>
-        <a href="javascript:void(0);" class="icon">&#9776;</a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="yearbook.html">Yearbook</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rss-main">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cssart.html">CSS Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>			
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- =========== END WEBSITE NAVIGATION PANE ============ -->
     <!-- ====================== END MASTER SECTION ============= -->
@@ -81,7 +97,7 @@
                 If using Bootstrap styling
                 Each section should be placed with a pair of DIVs with classes of container or container-fluid and row 
             -->
-    <div class="container-fluid">
+    <div class="container pad">
         <div class="row" role="row">
             <div class="col">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
