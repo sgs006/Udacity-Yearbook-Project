@@ -5,7 +5,7 @@ body {
 }
 
 .jumbotron {
-    background: linear-gradient(90deg, #31C5BD, #A97ECD);
+    background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
     color: whitesmoke;
 }
 
