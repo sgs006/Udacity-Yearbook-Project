@@ -168,6 +168,14 @@ pre {
 	BEGIN CARD CONTAINER SECTION FOR YEARBOOK PROFILES WRITTEN BY MO'
 *******************************************************************/
 
+.bluegreen-gradient {
+    background: linear-gradient(275deg, #00B3E4 0%, #31C5BD 100%);
+}
+
+.purple-gradient {
+    background: linear-gradient(275deg, #A97ECD 0%, #D89BE3 100%);
+}
+
 .card-container {
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
