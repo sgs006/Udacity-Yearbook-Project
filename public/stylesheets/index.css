@@ -1,0 +1,191 @@
+/*============== GENERAL SYTLES ===================*/
+
+.button {
+    background: #00b3e4;
+    width: 60%;
+    padding: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+    font-weight: bold;
+    letter-spacing: 1;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+.section-head {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.section-head h1 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section-head h4 {
+    text-transform: uppercase;
+}
+
+/*====================== BACKGROUND GRADIENTS ========================*/
+
+.bluegreen-gradient {
+    background: linear-gradient(275deg, #00B3E4 0%, #31C5BD 100%);
+}
+
+.purple-gradient {
+    background: linear-gradient(275deg, #A97ECD 0%, #D89BE3 100%);
+}
+
+/*====================== END BACKGROUND GRADIENTS ====================*/
+
+/*========= WELCOME INTROCUTION ==========*/
+
+.intro {
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.intro h1 {
+    font-weight: 300;
+}
+
+.intro h3 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/*======================= END INTRODUCTION SECTION ==================*/
+
+/*=================== BEGIN YEARBOOK SECTION =======================*/
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main p {
+    text-align: center;
+    max-width: 750px;
+    margin: 5%;
+}
+
+.main-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.rss-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.main-thumb {
+    width: 165px;
+    height: 200px;
+    margin: 20px;
+    flex-basis: 165px;
+    flex-grow: 1;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+    transition: .5s transform;
+    border: 2px solid #eee;
+}
+
+.main-thumb:hover {
+    transform: scale(1.05);
+}
+
+/*============== YEARBOOK CLOSE ==============*/
+
+.rss-thumb {
+    width: 200px;
+    height: 175px;
+    margin: 20px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    box-shadow: 1px 1px 25px 0px rgba(46, 61, 73, 0.2);
+    margin: 20px 20px 120px 20px;
+    border: 2px solid #dde;
+    border-radius: 5px;
+}
+
+/*.rss-img:hover {
+}*/
+
+.rss-content {
+    margin-top: 190px;
+}
+
+.rss-content {
+    margin-left: 5px;
+}
+
+.rss-content h3{
+    text-align: center;
+}
+
+.rss-content p {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.art--columns div {
+    margin: 10px 0px 10px 0px;
+}
+
+.art--columns-content h3 {
+    margin-top: 10%;
+}
+
+.art--columns p {
+    width: 90%;
+}
+
+/*=============== FOOTER STYLES ================*/
+
+/*footer {
+	background:#ACA5CC;
+	color:white;
+	height: 10vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+footer p {
+	color:white;
+	text-align:center;
+}*/
+
+/*=============== END FOOTER STYLE =====================*/
