@@ -15,6 +15,23 @@ body {
     outline: 0 !important;
 }
 
+/* Animated Search Bar from W3 */
+input[type=text] {
+    width: 650px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+
+#searchBar {
+    margin: 30px;
+}
+/**************************/
+
 /* entire container, keeps perspective */
 
 /*      Just for presentation        */

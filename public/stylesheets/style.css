@@ -10,10 +10,14 @@ body {
     color: #525c65;
 }
 
-#footer {
-    color: red;
-    margin: auto;
-    background-color: blue;
+ .pageFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    background: linear-gradient(275deg, #AA7ECD 0%, #D89BE3 100%);
 }
 
 .annotation {
@@ -278,6 +282,7 @@ pre {
     height: 105px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
+    background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
 }
 
 .card .cover img {

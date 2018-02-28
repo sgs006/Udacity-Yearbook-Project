@@ -85,6 +85,13 @@
             </p>
         </section>
         <div class="row">
+            <div class="col-lg-12 text-center" id="searchBar">
+                <input type="text" name="search" placeholder="Search Scholars..">
+               
+            </div>
+        </div>
+        
+        <div class="row" id="cardRow">
             <!-- Card 1 -->
             <div class="col-md-4 col-sm-6">
                 <div class="card-container">
@@ -94,14 +101,14 @@
                                 <img src="public/images/rotating_card_thumb1.png" />
                             </div>
                             <div class="user">
-                                <img class="img-circle" src="public/images/profile1.png" />
+                                <img class="img-circle" src="public/images/Profile1.png" />
                             </div>
                             <div class="content">
                                 <div class="main">
                                     <h3 class="name">Carlota Pearl</h3>
                                     <p class="profession">Developer-In-Training</p>
 
-                                    <p class="text-center">"This experience has been eye-opening and the course streghten my skills in web development."</p>
+                                    <p class="text-center">"This experience has been eye-opening and the course strenghten my skills in web development."</p>
                                 </div>
                                 <div class="footer">
                                     <div class="rating">
@@ -173,7 +180,7 @@
                                 <img src="public/images/rotating_card_thumb2.png" />
                             </div>
                             <div class="user">
-                                <img class="img-circle" src="public/images/profile2.png" />
+                                <img class="img-circle" src="public/images/Profile2.png" />
                             </div>
                             <div class="content">
                                 <div class="main">
@@ -252,7 +259,7 @@
                                 <img src="public/images/rotating_card_thumb3.png" />
                             </div>
                             <div class="user">
-                                <img class="rounded-circle" src="public/images/profile3.png" />
+                                <img class="rounded-circle" src="public/images/Profile3.png" />
                             </div>
                             <div class="content">
                                 <div class="main">
@@ -322,13 +329,26 @@
             </div>
             <!--end col-sm-6 -->
 
-            <!--         <div class="col-sm-1"></div> -->
+            <!--<div class="col-sm-1"></div> -->
 
 
         </div>
-        <!-- end row -->
+        <div class="cardDisplay">
+        <!-- end cardRow -->
+        </div>
+        <div class="cardDisplay2">
+        </div>
+        <div class="cardDisplay2">
+        </div>
+        <!-- end cardDisplay -->
     </div>
     <!-- end container-->
+
+    <footer class="pageFooter text-center">
+      <div class="contianer">
+        <span >All right reserved. Designed and developed by Grow with Google Front End Scholars 2018.</span>
+      </div>
+    </footer>
 
 
     <!-- <div class="yearbook-section">
@@ -396,6 +416,71 @@
                 $card.addClass('hover');
             }
         }
+
+        //function repeatCard() {
+        for(var i = 1; i<4; i++){
+            $(".cardDisplay").append('<div class="row" id="repeatCards"></div>');
+            for(var i = 0; i<3; i++){
+                $("#repeatCards").append('<div class="col-md-4 col-sm-6">' +
+                    '<div class="card-container"><div class="card"><div class="front"><div class="cover">' +
+                    '</div><div class="user">' +
+                    '<img class="img-circle" src="public/images/studentProfile.png" /></div>' +
+                    '<div class="content"><div class="main"><h3 class="name">Student Name</h3>' +
+                    '<p class="profession">Current or Future Profession</p><p class="text-center">"Udacity/Google Student Impact Statement"</p>' +
+                    '</div><div class="footer"><div class="rating"></div></div></div></div>' +
+                    '<div class="back"><div class="header"><h5 class="motto">"Cool catchy phrase or website link"</h5>' +
+                    '</div><div class="content"><div class="main">' +
+                    '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
+                    '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
+                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' + 
+                    '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
+                    '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
+                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');  
+            }
+        }
+
+        for(var i = 1; i<4; i++){
+            $(".cardDisplay2").append('<div class="row" id="repeatCards"></div>');
+            for(var i = 0; i<3; i++){
+                $("#repeatCards").append('<div class="col-md-4 col-sm-6">' +
+                    '<div class="card-container"><div class="card"><div class="front"><div class="cover">' +
+                    '</div><div class="user">' +
+                    '<img class="img-circle" src="public/images/studentProfile.png" /></div>' +
+                    '<div class="content"><div class="main"><h3 class="name">Student Name</h3>' +
+                    '<p class="profession">Current or Future Profession</p><p class="text-center">"Udacity/Google Student Impact Statement"</p>' +
+                    '</div><div class="footer"><div class="rating"></div></div></div></div>' +
+                    '<div class="back"><div class="header"><h5 class="motto">"Cool catchy phrase or website link"</h5>' +
+                    '</div><div class="content"><div class="main">' +
+                    '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
+                    '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
+                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' + 
+                    '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
+                    '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
+                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');  
+            }
+        }
+
+        for(var i = 1; i<4; i++){
+            $(".cardDisplay3").append('<div class="row" id="repeatCards"></div>');
+            for(var i = 0; i<3; i++){
+                $("#repeatCards").append('<div class="col-md-4 col-sm-6">' +
+                    '<div class="card-container"><div class="card"><div class="front"><div class="cover">' +
+                    '</div><div class="user">' +
+                    '<img class="img-circle" src="public/images/studentProfile.png" /></div>' +
+                    '<div class="content"><div class="main"><h3 class="name">Student Name</h3>' +
+                    '<p class="profession">Current or Future Profession</p><p class="text-center">"Udacity/Google Student Impact Statement"</p>' +
+                    '</div><div class="footer"><div class="rating"></div></div></div></div>' +
+                    '<div class="back"><div class="header"><h5 class="motto">"Cool catchy phrase or website link"</h5>' +
+                    '</div><div class="content"><div class="main">' +
+                    '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
+                    '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
+                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' + 
+                    '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
+                    '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
+                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');  
+            }
+        }
+       //}
     </script>
     <!-- ===================== END PAGE SPECIFIC JAVASCRIPT ========= -->
 </body>
