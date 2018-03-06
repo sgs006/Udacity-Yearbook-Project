@@ -82,10 +82,9 @@ button:hover {
     margin-bottom: 30px;
 }
 
-/*======================= END INTRODUCTION SECTION ==================*/
+/*======================= END INTRODUCTION SECTION SECTION ==================*/
 
-/*========= WELCOME INTRODUCTION ==========*/
-
+/*========= JUMP TO BUTTONS ==========*/
 
 @media (min-width: 768px) {
   .resources-jumpTo {
@@ -118,7 +117,7 @@ button:hover {
   }
 }
 
-/*======================= END INTRODUCTION SECTION ==================*/
+/*======================= END JUMP TO BUTTONS SECTION ==================*/
 
 /*=============== FOOTER STYLES ================*/
 
