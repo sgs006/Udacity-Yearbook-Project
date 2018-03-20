@@ -84,7 +84,40 @@ button:hover {
 
 /*======================= END INTRODUCTION SECTION ==================*/
 
+/*========= JUMP TO BUTTONS ==========*/
 
+@media (min-width: 768px) {
+  .resources-jumpTo {
+    max-width: 504px;
+  }
+}
+
+@media (min-width: 992px) {
+  .resources-jumpTo {
+    max-width: 672px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .resources-jumpTo {
+    max-width: 792px;
+  }
+}
+
+.resources-buttons {
+  /* border-image: linear-gradient(#8A2BE2,#00B3E4) 30; */
+  color: black;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    margin-left: 1.5rem;
+    margin-top: -0.5rem;
+  }
+}
+
+/*======================= END JUMP TO BUTTONS SECTION ==================*/
 
 /*=============== FOOTER STYLES ================*/
 
