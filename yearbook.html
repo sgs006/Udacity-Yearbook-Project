@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- ========= WEBSITES META INFORMATION INCLUDING STATUS BAR COLOR FOR MOBILE BROWSERS ========== -->
     <meta name="description" content="Grow with Google Scholarship 2018 - Udacity Community Yearbook. Yearbook project for 2018 GwG Cohort.">
     <meta name="msapplication-TileColor" content="#00B3E4">
     <meta name="theme-color" content="#00B3E4">
     <meta name="apple-mobile-web-app-status-bar-style" content="#00B3E4" />
     <!-- ===================== END WEBSITE META INFORMATION ========== -->
-    
+
     <!-- ============= SOCIAL MEDIA META PROPERTIES ================== -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -87,10 +87,10 @@
         <div class="row">
             <div class="col-lg-12 text-center" id="searchBar">
                 <input type="text" name="search" placeholder="Search Scholars..">
-               
+
             </div>
         </div>
-        
+
         <div class="row" id="cardRow">
             <!-- Card 1 -->
             <div class="col-md-4 col-sm-6">
@@ -344,6 +344,9 @@
     </div>
     <!-- end container-->
 
+    <br>
+    <br>
+    <br>
     <footer class="pageFooter text-center">
       <div class="contianer">
         <span >All right reserved. Designed and developed by Grow with Google Front End Scholars 2018.</span>
@@ -388,8 +391,10 @@
 
     <!-- ====================== MASTER MASTER SECTION ============= -->
     <!-- ======== jQuery first, then Popper.js, then Bootstrap JS | BOOTSTRAP AND PROJECT SCRIPTS AT THE FOOTER ========= -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <!-- Non-slimed version. Slimmed version doesn't have AJAX -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -399,9 +404,9 @@
     <!-- ====================== END MASTER SECTION ============= -->
 
 
-    
+
     <!-- ======== PAGE SPECIFIC JAVASCRIPT ========= -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $().ready(function () {
             $('[rel="tooltip"]').tooltip();
 
@@ -432,10 +437,10 @@
                     '</div><div class="content"><div class="main">' +
                     '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
                     '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
-                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' + 
+                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' +
                     '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
                     '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
-                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');  
+                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');
             }
         }
 
@@ -453,10 +458,10 @@
                     '</div><div class="content"><div class="main">' +
                     '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
                     '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
-                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' + 
+                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' +
                     '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
                     '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
-                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');  
+                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');
             }
         }
 
@@ -474,15 +479,17 @@
                     '</div><div class="content"><div class="main">' +
                     '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
                     '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
-                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' + 
+                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' +
                     '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
                     '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
-                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');  
+                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');
             }
         }
        //}
-    </script>
+    </script> -->
     <!-- ===================== END PAGE SPECIFIC JAVASCRIPT ========= -->
+    <!-- Yearbook JS file -->
+    <script src="public\scripts\yearbook.js"></script>
 </body>
 
 </html>
