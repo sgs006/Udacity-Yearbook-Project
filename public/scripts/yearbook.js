@@ -4,7 +4,7 @@
  * @author robt9095wssas
  * @author rskovronuc6g
  * @desc Calls the JSON file from Google Docs to make the cards
- * @version 1.0
+ * @version 1.1
  */
 
 /** ***************************************
@@ -15,20 +15,60 @@ const $cardRow = $("#cardRow");
 /** ***************************************
  * Model
  ******************************************/
+/** @desc URL for the google sheets with student info */
 const api = "https://script.googleusercontent.com/macros/echo?user_content_key=rPswN3mE0GY8EgmnDOYcNKWiv0CT28n9CIrUaRG3kTrGbp74wWqOttwqBZLG_CD2p3ny42g63whN_6iDnP45BeIkE9tHDbekOJmA1Yb3SEsKFZqtv3DaNYcMrmhZHmUMWojr9NvTBuBLhyHCd5hHa1ZsYSbt7G4nMhEEDL32U4DxjO7V7yvmJPXJTBuCiTGh3rUPjpYM_V0PJJG7TIaKp8eidpIA163SiTYYksqCwBqx6YpZaDrVY_lcUEZWvYHQol3WVQ7nIi3OJamMs-n04TQJv8DXWa1h6YynRodI14iC1FYEJlGtPA&lib=MbpKbbfePtAVndrs259dhPT7ROjQYJ8yx";
 
 /** ***************************************
  * Controller
  ******************************************/
-/** jQuery doc ready ES6 shorthand */
-$(_ => {
+/**
+ * @desc jQuery doc ready shorthand
+ * When ready, makes an AJAX call
+ */
+$(function() {
   /**
    * @desc Pulls JSON data from google doc spreadsheets
+   * @param {string} api It's the URL for the data
+   * @param {object} data JSON data from google sheets
    */
   $.getJSON(api).done(function(data) {
+    /** @desc Array of JSON data */
     let arr = Array.from(data["Form Responses 1"]);
-    arr.forEach(makeCard);
-    // console.log(arr[0]);
+    /**
+     * @desc Loops through the array of JSON to make cards
+     * @param {object} element Each element the array with student data
+     */
+    arr.forEach(function(element) {
+      /** @desc Conditional incase empty field for GIthub */
+      if (element.Github === "") {
+        let defaultAvatar = "public/images/studentProfile.png";
+        makeCard(element, defaultAvatar);
+      } else {
+        /**
+         * @desc Github URL for each student
+         * Conditional incase of full URL or just name
+         */
+        let githubURL =
+          element.Github.includes("https") ?
+            `https://api.github.com/users/${element.Github.slice(element.Github.lastIndexOf("/") + 1)}` :
+            `https://api.github.com/users/${element.Github}`;
+        /**
+         * @desc Makes a call to github to get avatar image
+         * @param {string} githubURL URL to direct the call
+         * @param {object} data JSON data from github
+         */
+        $.getJSON(githubURL).done(function(data) {
+          /** @desc Image URL for each student from github */
+          let avatar = data.avatar_url;
+          /**
+           * @desc Calling the makeCard functionb
+           * @arg {object} element JSON data from googlesheets
+           * @arg {string} avatar URL from github
+           */
+          makeCard(element, avatar);
+        });
+      }
+    });
   })
   .fail(function() {
     alert('error getting google data!');
@@ -42,14 +82,14 @@ $(_ => {
  * @desc Makes the cards with JSON data
  * @param {object} ele Takes an object to build each card
  */
-function makeCard(e) {
+function makeCard(e, github) {
   const $divCols = $(`
     <div class="col-md-4 col-sm-6">
       <div class="card-container">
         <article class="card">
           <div class="front">
             <div class="cover"></div>
-            <div class="user"><img class="img-circle" src="public/images/studentProfile.png" /></div>
+            <div class="user"><img class="img-circle" src=${github} /></div>
             <div class="content">
               <div class="main">
                 <h3 class="name">${e.First_Name} ${e.Last_Name}</h3>
@@ -71,12 +111,12 @@ function makeCard(e) {
                 <p class="text-center">HTML5, CSS3, and JavaScript! </p>
                 <div class="stats-container">
                   <div class="stats">
-                    <h4>Portfolio</h4>
-                    <p><a href=${e["Portfolio/Website_URL"]} target="_blank">Portfolio</a></p>
+                    <h4></h4>
+                    <p></p>
                   </div>
                   <div class="stats">
-                    <h4>4</h4>
-                    <p>Projects</p>
+                    <h4>Portfolio</h4>
+                    <p><a href=${e["Portfolio/Website_URL"]} target="_blank">Portfolio</a></p>
                   </div>
                   <div class="stats">
                     <h4></h4>
