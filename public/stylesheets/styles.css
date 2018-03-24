@@ -59,6 +59,7 @@ body {
 /* button styles */
 
 .button {
+  display: block;
   background: #00b3e4;
   width: 60%;
   padding: 30px;
@@ -68,7 +69,7 @@ body {
   box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
   font-weight: bold;
   letter-spacing: 1px;
-  margin: 4rem 0;
+  margin: 4rem auto;
 }
 
 .button:hover {
@@ -171,14 +172,7 @@ a:hover {
 
 /* Yearbook section */
 
-.section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-  align-items: center;
-  padding: 0 30px;
-}
+
 
 .main p {
   text-align: center;
@@ -194,13 +188,9 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.rss-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 800px;
-  margin-bottom: 20px;
-}
+/* resources styles */
+
+
 
 .main-thumb {
   width: 165px;
@@ -218,7 +208,14 @@ a:hover {
 }
 
 
-/*============== YEARBOOK CLOSE ==============*/
+/* RSS resource section styles */
+.rss-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
 
 .rss-thumb {
   width: 200px;
@@ -232,12 +229,8 @@ a:hover {
   border-radius: 5px;
 }
 
-
 .rss-content {
   margin-top: 190px;
-}
-
-.rss-content {
   margin-left: 5px;
 }
 
@@ -245,10 +238,21 @@ a:hover {
   text-align: center;
 }
 
-.rss-content p {
-  font-size: 12px;
-  margin-top: 10px;
-  margin-left: 5px;
+
+
+
+
+
+
+
+/* css art section styles */
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 30px;
 }
 
 .art--columns div {
@@ -262,13 +266,6 @@ a:hover {
 .art--columns p {
   width: 90%;
 }
-
-
-
-
-
-
-
 
 
 

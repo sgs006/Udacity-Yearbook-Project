@@ -5,11 +5,7 @@
     color: whitesmoke;
 }
 
-.btn:hover,
-.btn:focus,
-.btn:active {
-    outline: 0 !important;
-}
+
 
 /* Animated Search Bar from W3 */
 input[type=text] {
