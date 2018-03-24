@@ -10,8 +10,7 @@ body {
     color: #525c65;
 }
 
-
-.masterFooter{
+.master-footer{
   position: fixed;
   bottom: 0;
   padding-top: 10px;
@@ -24,7 +23,7 @@ body {
   font-weight: 700;
 
 }
-.masterFooter a {
+.master-footer a {
   color: white;
   font-size: 14px;
   font-weight: 700;
