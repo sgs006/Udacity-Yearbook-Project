@@ -8,6 +8,7 @@
 body {
   color: #525c65;
   font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #E5E9ED;
 }
 
 
@@ -232,9 +233,6 @@ a:hover {
 }
 
 
-/*.rss-img:hover {
-}*/
-
 .rss-content {
   margin-top: 190px;
 }
@@ -297,7 +295,7 @@ a:hover {
 
 /* footer styles */
 
-.pageFooter {
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -305,4 +303,5 @@ a:hover {
   line-height: 60px;
   color: #fff;
   background: linear-gradient(275deg, #AA7ECD 0%, #D89BE3 100%);
+  text-align: center;
 }
