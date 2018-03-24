@@ -52,21 +52,6 @@ input[type=text]:focus {
     margin: 0;
 }
 
-.space-30 {
-    height: 30px;
-    display: block;
-}
-
-.space-50 {
-    height: 50px;
-    display: block;
-}
-
-.space-200 {
-    height: 200px;
-    display: block;
-}
-
 .btn-simple {
     opacity: .8;
     color: #666666;
