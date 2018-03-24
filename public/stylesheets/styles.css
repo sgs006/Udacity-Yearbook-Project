@@ -77,17 +77,13 @@ body {
   color: #fff;
 }
 
-
-
-
-
 /* background gradients */
 
-.bluegreen-gradient {
+.resources-section--header {
   background: linear-gradient(275deg, #00B3E4 0%, #31C5BD 100%);
 }
 
-.purple-gradient {
+.art-section--header {
   background: linear-gradient(275deg, #A97ECD 0%, #D89BE3 100%);
 }
 
