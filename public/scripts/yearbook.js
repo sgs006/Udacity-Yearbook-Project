@@ -48,10 +48,11 @@ $(function() {
          * @desc Github URL for each student
          * Conditional incase of full URL or just name
          */
-        let githubURL =
-          element.Github.includes("https") ?
-            `https://api.github.com/users/${element.Github.slice(element.Github.lastIndexOf("/") + 1)}` :
-            `https://api.github.com/users/${element.Github}`;
+        let githubName = 
+            element.Github.includes("https") ?
+            element.Github.slice(element.Github.lastIndexOf("/") + 1) :
+            element.Github;
+        let githubURL = `https://api.github.com/users/${githubName}`;
         /**
          * @desc Makes a call to github to get avatar image
          * @param {string} githubURL URL to direct the call
