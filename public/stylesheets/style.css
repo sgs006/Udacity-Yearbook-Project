@@ -1,4 +1,4 @@
-/* SITE WIDE PROPERTIES*/
+/* global styles */
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -6,8 +6,8 @@
 }
 
 body {
-    margin: 0;
     color: #525c65;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
  .pageFooter {
@@ -34,73 +34,9 @@ a:hover {
     text-decoration: none;
 }
 
-/***********************************************************************
-	STYLE GUIDE IMPLEMENTATION FOR FONTS FROM MO's ROTATING CARD CSS
-************************************************************************/
 
-h1 {
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Ubuntu", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 300;
-    line-height: 26.4px;
-}
 
-h2 {
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Ubuntu", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 36px;
-    font-style: bold;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-}
 
-h3 {
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Ubuntu", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 15.4px;
-}
-
-h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Ubuntu", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 15.4px;
-}
-
-p {
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Ubuntu", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
-    color: #525c65;
-}
-
-blockquote {
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Ubuntu", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 21px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-pre {
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Ubuntu", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 18.5714px;
-}
 
 /***********************************************************************
 	START OF NAVBAR STYLES
