@@ -11,44 +11,7 @@ body {
 }
 
 
-
-.annotation {
-  font-style: italic;
-}
-
-a {
-  text-decoration: none;
-  color: #525c65;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-/*============== GENERAL SYTLES ===================*/
-
-
-
-.section-banner {
-  height: 30vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.section-banner h1 {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.section-banner h4 {
-  text-transform: uppercase;
-}
-
-/* Header/Introduction styles */
+/* header & intro styles */
 
 .intro {
   background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
@@ -69,6 +32,29 @@ a:hover {
 }
 
 
+/* resources styles */
+
+.annotation {
+  font-style: italic;
+}
+
+
+/* section banner styles */
+
+.section-banner {
+  color: #fff;
+  text-align: center;  
+}
+
+.section-banner h1 {
+  margin-bottom: 1.5rem;
+}
+
+.section-banner h1,
+.section-banner h4 {
+  text-transform: uppercase;
+}
+
 /* button styles */
 
 .button {
@@ -76,41 +62,18 @@ a:hover {
   width: 60%;
   padding: 30px;
   text-transform: uppercase;
-  text-decoration: none;
   color: #fff;
   text-align: center;
   box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
   font-weight: bold;
-  letter-spacing: 1;
-  margin-top: 10%;
-  margin-bottom: 5%;
+  letter-spacing: 1px;
+  margin: 4rem 0;
 }
 
-button:hover {
+.button:hover {
   opacity: .8;
+  color: #fff;
 }
-
-
-
-
-
-/* footer styles */
-
-.pageFooter {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  color: white;
-  background: linear-gradient(275deg, #AA7ECD 0%, #D89BE3 100%);
-}
-
-
-
-
-
-
 
 
 
@@ -127,23 +90,6 @@ button:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Navbar styles */
 
 .topnav {
@@ -154,7 +100,7 @@ button:hover {
 .topnav a {
   float: left;
   display: block;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -164,18 +110,30 @@ button:hover {
 }
 
 .topnav a:hover {
-  background: white;
+  background: #fff;
   color: black;
   text-decoration: none;
 }
 
 .active {
-  background-color: white;
-  color: white;
+  background-color: #fff;
+  color: #fff;
 }
 
 .topnav .icon {
   display: none;
+}
+
+
+/* navigation styles */
+
+a {
+  text-decoration: none;
+  color: #525c65;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -209,6 +167,7 @@ button:hover {
 	END OF NAVBAR STYLES
 *******************************************************************/
 
+
 /* Yearbook section */
 
 .section {
@@ -217,10 +176,7 @@ button:hover {
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px;
 }
 
 .main p {
@@ -260,6 +216,7 @@ button:hover {
   transform: scale(1.05);
 }
 
+
 /*============== YEARBOOK CLOSE ==============*/
 
 .rss-thumb {
@@ -274,6 +231,7 @@ button:hover {
   border-radius: 5px;
 }
 
+
 /*.rss-img:hover {
 }*/
 
@@ -285,7 +243,7 @@ button:hover {
   margin-left: 5px;
 }
 
-.rss-content h3{
+.rss-content h3 {
   text-align: center;
 }
 
@@ -305,4 +263,46 @@ button:hover {
 
 .art--columns p {
   width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer styles */
+
+.pageFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  background: linear-gradient(275deg, #AA7ECD 0%, #D89BE3 100%);
 }
