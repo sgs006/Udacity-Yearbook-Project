@@ -10,10 +10,13 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+
 /* link resources styles */
+
 .annotation {
   font-style: italic;
 }
+
 
 /* button styles */
 
@@ -36,18 +39,50 @@ body {
   color: #fff;
 }
 
+/* navigation styles */
 
-/* header & intro styles */
+a {
+  color: #525c65;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#mainHeader nav a {
+  margin-right: 1.4rem;
+}
+
+
+
+
+/******************************* header & intro section styles *******************************/
+
+
+
+
+.group-photos .intro p {
+  text-align: center;
+  max-width: 750px;
+  margin: 5%;
+}
+
+.group-photos .photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+#mainHeader {
+  background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
+}
 
 header .intro {
-  background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
   color: #fff;
   text-align: center;
   padding: 1rem 0 3.5rem;
-}
-
-header .intro h2 {
-  font-weight: 300;
 }
 
 header .intro h1 {
@@ -57,11 +92,34 @@ header .intro h1 {
   font-weight: bold;
 }
 
+header .intro h2 {
+  font-weight: 300;
+}
+
+
+/********************************* class photo section styles *********************************/
+
+.main-thumb {
+  width: 165px;
+  height: 200px;
+  margin: 20px;
+  flex-basis: 165px;
+  flex-grow: 1;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  transition: .5s transform;
+  border: 2px solid #eee;
+}
+
+.main-thumb:hover {
+  transform: scale(1.05);
+}
+
+
 /* section banner styles */
 
 .section-banner {
   color: #fff;
-  text-align: center;  
+  text-align: center;
 }
 
 .section-banner h1 {
@@ -82,26 +140,8 @@ header .intro h1 {
 }
 
 
+/********************************* RSS resource section styles *********************************/
 
-/* class photo section styles */
-
-.main-thumb {
-  width: 165px;
-  height: 200px;
-  margin: 20px;
-  flex-basis: 165px;
-  flex-grow: 1;
-  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
-  transition: .5s transform;
-  border: 2px solid #eee;
-}
-
-.main-thumb:hover {
-  transform: scale(1.05);
-}
-
-
-/* RSS resource section styles */
 .rss-grid {
   display: flex;
   flex-wrap: wrap;
@@ -131,7 +171,9 @@ header .intro h1 {
   text-align: center;
 }
 
-/* css art section styles */
+
+/********************************* css art section styles *********************************/
+
 .section {
   display: flex;
   justify-content: center;
@@ -153,41 +195,7 @@ header .intro h1 {
   width: 90%;
 }
 
-
-
-
-
-
-
-
-
-
-
-/************************************ navigation styles ************************************/
-
-a {
-  color: #525c65;
-}
-
-
-
-
-/* Yearbook section */
-.main p {
-  text-align: center;
-  max-width: 750px;
-  margin: 5%;
-}
-
-.group-photos .photos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 800px;
-  margin-bottom: 20px;
-}
-
-/* footer styles */
+/********************************* footer section styles *********************************/
 
 footer {
   position: fixed;
