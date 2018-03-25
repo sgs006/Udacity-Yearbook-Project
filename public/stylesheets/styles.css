@@ -39,32 +39,50 @@ body {
   color: #fff;
 }
 
-/* navigation styles */
-
-a {
-  color: #525c65;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-#mainHeader nav a {
-  margin-right: 1.4rem;
-}
-
-
-
 
 /******************************* header & intro section styles *******************************/
 
 
+/* navigation styles */
 
+#mainHeader {
+  padding: 1.2rem 0;
+  background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
+}
 
+#mainHeader nav a {
+  margin-right: 1.4rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+#mainHeader nav a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+#mainHeader .intro {
+  color: #fff;
+  text-align: center;
+  padding: 2.2rem 0 1rem;
+}
+
+#mainHeader .intro h1 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#mainHeader .intro h2 {
+  font-weight: 300;
+}
+
+/********************************* class photo section styles *********************************/
 .group-photos .intro p {
   text-align: center;
   max-width: 750px;
-  margin: 5%;
+  margin: 0 auto;
 }
 
 .group-photos .photos {
@@ -74,30 +92,6 @@ a:hover {
   max-width: 800px;
   margin-bottom: 20px;
 }
-
-#mainHeader {
-  background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
-}
-
-header .intro {
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0 3.5rem;
-}
-
-header .intro h1 {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-header .intro h2 {
-  font-weight: 300;
-}
-
-
-/********************************* class photo section styles *********************************/
 
 .main-thumb {
   width: 165px;
@@ -160,6 +154,7 @@ header .intro h2 {
   margin: 20px 20px 120px 20px;
   border: 2px solid #dde;
   border-radius: 5px;
+  color: inherit;
 }
 
 .rss-content {
@@ -194,6 +189,7 @@ header .intro h2 {
 .art--columns p {
   width: 90%;
 }
+
 
 /********************************* footer section styles *********************************/
 
