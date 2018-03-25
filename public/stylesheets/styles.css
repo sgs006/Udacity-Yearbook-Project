@@ -179,7 +179,7 @@ a {
   margin: 5%;
 }
 
-.main-grid {
+.group-photos .photos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
