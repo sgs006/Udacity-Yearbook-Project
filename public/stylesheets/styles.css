@@ -8,7 +8,6 @@
 body {
   color: #525c65;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #E5E9ED;
 }
 
 /* link resources styles */
@@ -167,13 +166,9 @@ body {
 /************************************ navigation styles ************************************/
 
 a {
-  text-decoration: none;
   color: #525c65;
 }
 
-a:hover {
-  text-decoration: none;
-}
 
 /* Navbar styles */
 
