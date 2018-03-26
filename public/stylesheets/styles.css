@@ -240,12 +240,16 @@ form .yearbook-searchbar:focus {
 
 form .yearbook-searchbar {
   margin: 1rem 0 2.5rem;
-  width: 500px;  
+  border-radius: 3px;
 }
 
 form .yearbook-searchbar input {
   color: #444;
-  border: 1px solid rgba(70, 0, 100, 0.208);  
+  border: 1px solid rgba(70, 0, 100, 0.208); 
+  padding-left: 10px;
+  width: 500px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 form .yearbook-searchbar input:focus {
