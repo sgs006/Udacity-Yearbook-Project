@@ -225,7 +225,7 @@ footer {
 
 /**************************** Scholar search bar styles ****************************/
 
-.yearbook-searchbar {
+/* form .yearbook-searchbar {
   width: 500px;
   border: 1px solid rgba(70, 0, 100, 0.208);
   padding: 8px;
@@ -234,9 +234,33 @@ footer {
   border-radius: 3px;
 }
 
-.yearbook-searchbar:focus {
+form .yearbook-searchbar:focus {
+  outline: none;
+} */
+
+form .yearbook-searchbar {
+  margin: 1rem 0 2.5rem;
+  width: 500px;  
+}
+
+form .yearbook-searchbar input {
+  color: #444;
+  border: 1px solid rgba(70, 0, 100, 0.208);  
+}
+
+form .yearbook-searchbar input:focus {
   outline: none;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* When an input field receives focus, make it stretch out 100%, good for search bars! (default: not applied) */
