@@ -95,6 +95,11 @@ body {
 }
 
 
+.page-intro h2 {
+  margin-bottom: 2rem;
+}
+
+
 /********************************* class photo section styles *********************************/
 
 .group-photos .intro p {
