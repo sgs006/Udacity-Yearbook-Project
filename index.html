@@ -33,11 +33,7 @@
 </head>
 
 <body>
-  <!-- SKIP NAV (for screen readers) -->
-  <div id="skiplink" class="sr-only sr-only-focusable">
-      <!-- CHANGE HREF TO ID OF MAIN CONTENT SECTION  -->
-      <a href="#group-photos">skip to page content</a>
-    </div>
+
 
   <header id="mainHeader">
     <nav class="container-fluid">
@@ -47,6 +43,11 @@
       <a href="cssart.html" title="CSS Art Projects">CSS Art Projects</a>
       <a href="about.html" title="About">About</a>
       <a href="javascript:void(0);" class="icon">&#9776;</a>
+      <!-- SKIP NAV (for screen readers) -->
+      <div id="skiplink" class="sr-only sr-only-focusable">
+        <!-- CHANGE HREF TO ID OF MAIN CONTENT SECTION  -->
+        <a href="#group-photos">skip to page content</a>
+      </div>
     </nav>
 
     <div class="row">
@@ -113,84 +114,102 @@
   </div>
 
   <!-- Resources grid -->
-  <div class="section">
-    <div class="rss-grid">
-      <a class="rss-thumb" href="#">
-        <div class="rss-content">
+    <section class="grid-resources">
+      <div class="rss-grid">
+        <a class="rss-thumb" href="#">
+          <div class="rss-content">
+            <div class="rss-img">
+              <!-- dynamic rss img goes here-->
+            </div>
+            <h3>Courses</h3>
+          </div>
+        </a>
+  
+        <a class="rss-thumb" href="#">
+          <div class="rss-content">
+            <div class="rss-img">
+              <!-- dynamic rss img goes here-->
+            </div>
+            <h3>Books</h3>
+          </div>
+        </a>
+  
+        <a class="rss-thumb" href="#">
           <div class="rss-img">
             <!-- dynamic rss img goes here-->
           </div>
-          <h3>Courses</h3>
-        </div>
-      </a>
-      <a class="rss-thumb" href="#">
-        <div class="rss-content">
-          <div class="rss-img">
-            <!-- dynamic rss img goes here-->
+          <div class="rss-content">
+            <h3>Tools</h3>
           </div>
-          <h3>Books</h3>
-        </div>
-      </a>
-      <a class="rss-thumb" href="#">
-        <div class="rss-img">
-          <!-- dynamic rss img goes here-->
-        </div>
-        <div class="rss-content">
-          <h3>Tools</h3>
-        </div>
-      </a>
-      <a class="rss-thumb" href="#">
-        <div class="rss-content">
-          <div class="rss-img">
-            <!-- dynamic rss img goes here-->
+        </a>
+  
+        <a class="rss-thumb" href="#">
+          <div class="rss-content">
+            <div class="rss-img">
+              <!-- dynamic rss img goes here-->
+            </div>
+            <h3>Code Playgrounds</h3>
           </div>
-          <h3>Code Playgrounds</h3>
-        </div>
-      </a>
-      <a class="rss-thumb" href="#">
-        <div class="rss-content">
-          <div class="rss-img">
-            <!-- dynamic rss img goes here-->
+        </a>
+  
+        <a class="rss-thumb" href="#">
+          <div class="rss-content">
+            <div class="rss-img">
+              <!-- dynamic rss img goes here-->
+            </div>
+            <h3>Learning Games</h3>
           </div>
-          <h3>Learning Games</h3>
-        </div>
-      </a>
-      <a class="rss-thumb" href="#">
-        <div class="rss-content">
-          <div class="rss-img">
-            <!-- dynamic rss img goes here-->
+        </a>
+  
+        <a class="rss-thumb" href="#">
+          <div class="rss-content">
+            <div class="rss-img">
+              <!-- dynamic rss img goes here-->
+            </div>
+            <h3>Communities</h3>
           </div>
-          <h3>Communities</h3>
-        </div>
-      </a>
-      <a class="rss-thumb" href="#">
-        <div class="rss-content">
-          <div class="rss-img">
-            <!-- dynamic rss img goes here-->
+        </a>
+  
+        <a class="rss-thumb" href="#">
+          <div class="rss-content">
+            <div class="rss-img">
+              <!-- dynamic rss img goes here-->
+            </div>
+            <h3>Design</h3>
           </div>
-          <h3>Design</h3>
-        </div>
-      </a>
-      <a class="rss-thumb" href="#">
-        <div class="rss-content">
-          <div class="rss-img">
-            <!-- dynamic rss img goes here-->
+        </a>
+  
+        <a class="rss-thumb" href="#">
+          <div class="rss-content">
+            <div class="rss-img">
+              <!-- dynamic rss img goes here-->
+            </div>
+            <h3>Browser Extensions</h3>
           </div>
-          <h3>Browser Extensions</h3>
-        </div>
-      </a>
-      <a class="rss-thumb" href="#">
-        <div class="rss-content">
-          <div class="rss-img">
-            <!-- dynamic rss img goes here-->
+        </a>
+        
+        <a class="rss-thumb" href="#">
+          <div class="rss-content">
+            <div class="rss-img">
+              <!-- dynamic rss img goes here-->
+            </div>
+            <h3>References</h3>
           </div>
-          <h3>References</h3>
-        </div>
-      </a>
-    </div>
+        </a>
+      </div>
 
-  </div>
-  <a class="button" href="#">view full resource library</a>
+      <a class="button" href="#">view full resource library</a>
+
+    </section>
+
+
+
+
+
+
+
+
+  
 
   <!-- CSS Art section -->
   <div class="row" role="row">
@@ -200,7 +219,7 @@
     </div>
   </div>
 
-  <div class="section">
+  
     <div class="container">
       <div class="row art--columns">
         <div class="col-md-6 col-sm-12">
@@ -233,8 +252,6 @@
       <!-- END DIV ROW FOR COLUMNS -->
     </div>
     <!-- END CONTAINER DIV ROW FOR MANAGING SECTIONS -->
-
-  </div>
   <a class="button" href="#">view more art</a>
 
   <footer>

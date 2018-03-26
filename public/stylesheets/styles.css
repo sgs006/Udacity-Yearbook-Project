@@ -99,6 +99,14 @@ body {
   margin-bottom: 2rem;
 }
 
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+
 
 /********************************* class photo section styles *********************************/
 
@@ -159,7 +167,7 @@ body {
 
 /********************************* RSS resource section styles *********************************/
 
-.rss-grid {
+.grid-resources {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -192,14 +200,7 @@ body {
 
 /********************************* css art section styles *********************************/
 
-.section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-  align-items: center;
-  padding: 0 30px;
-}
+
 
 .art--columns div {
   margin: 10px 0px 10px 0px;
