@@ -17,12 +17,12 @@ input[type=text] {
 
 /* When the input field gets focus, change its width to 100% */
 
-#searchBar {
+#yearbook-searchbar {
   margin: 30px;
 }
 
 
-#searchBar:focus {
+#yearbook-searchbar:focus {
   width: 100%;
 }
 /**************************/
