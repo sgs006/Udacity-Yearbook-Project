@@ -88,6 +88,12 @@ body {
   font-weight: 300;
 }
 
+.page-intro {
+  text-align: center;
+  width: 60%;
+  margin: 3rem auto;
+}
+
 
 /********************************* class photo section styles *********************************/
 
@@ -223,7 +229,7 @@ footer {
   width: 500px;
   border: 1px solid rgba(70, 0, 100, 0.208);
   padding: 8px;
-  margin: 3.2rem 0 2.5rem;
+  margin: 1rem 0 2.5rem;
   color: #444;
   border-radius: 3px;
 }
