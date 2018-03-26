@@ -138,6 +138,11 @@
 
 /******************************** rotating card styles ************************************/
 
+
+.card .rounded-circle {
+  height: 115px;
+}
+
 .card {
   background: none repeat scroll 0 0 #FFFFFF;
   border-radius: 4px;
