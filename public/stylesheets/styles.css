@@ -50,9 +50,6 @@ body {
 
 /******************************* header & intro section styles *******************************/
 
-
-/* navigation styles */
-
 #mainHeader {
   padding: 1.2rem 0;
   background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
@@ -62,11 +59,16 @@ body {
   margin-right: 1.4rem;
   color: #fff;
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 #mainHeader nav a:hover {
-  opacity: 0.7;
   text-decoration: none;
+}
+
+#mainHeader nav a.active, #mainHeader nav a:hover  {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;  
 }
 
 #mainHeader .intro {
