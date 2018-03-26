@@ -110,18 +110,18 @@ body {
 
 /********************************* class photo section styles *********************************/
 
-.group-photos .intro p {
+.class-photos .intro p {
   text-align: center;
   max-width: 750px;
   margin: 0 auto;
 }
 
-.group-photos .photos {
+.class-photos .class-photos--grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 800px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .main-thumb {
