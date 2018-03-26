@@ -4,28 +4,7 @@
 }
 
 
-/* Animated Search Bar from W3 */
 
-input[type=text] {
-  width: 650px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-/**************************** Scholar search bar styles ****************************/
-
-
-/* When the input field gets focus, change its width to 100% */
-
-#yearbook-searchbar {
-  margin: 30px;
-}
-
-
-#yearbook-searchbar:focus {
-  width: 100%;
-}
-/**************************/
 
 
 /* entire container, keeps perspective */
