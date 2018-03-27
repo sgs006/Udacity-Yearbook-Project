@@ -122,10 +122,14 @@ body {
 
 .class-photos .class-photos--grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-around;
   max-width: 800px;
   margin: 0 auto 20px;
+}
+
+.class-photos .class-photos--grid img {
+  margin: 15px;
 }
 
 /* .main-thumb {
