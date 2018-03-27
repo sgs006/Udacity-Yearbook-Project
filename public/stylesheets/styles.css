@@ -66,9 +66,10 @@ body {
   text-decoration: none;
 }
 
-#mainHeader nav a.active, #mainHeader nav a:hover  {
+#mainHeader nav a.active,
+#mainHeader nav a:hover {
   padding-bottom: 5px;
-  border-bottom: 2px solid #fff;  
+  border-bottom: 2px solid #fff;
 }
 
 #mainHeader .intro {
@@ -93,7 +94,6 @@ body {
   width: 60%;
   margin: 3rem auto;
 }
-
 
 .page-intro h2 {
   margin-bottom: 2rem;
@@ -131,9 +131,6 @@ body {
 
 .class-photos .class-photos--grid .main-thumb {
   margin: 25px;
-  /* box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2); */
-  /* flex-basis: 128px;
-  flex-grow: 1; */
 }
 
 .main-thumb img {
@@ -147,14 +144,9 @@ body {
   border-radius: 50%;
 }
 
-/* .main-thumb {  
-  border: 2px solid #eee;
-}
-
- */
-
 
 /* section styles */
+
 section section {
   padding: 6rem 0;
 }
@@ -227,22 +219,23 @@ section section {
 }
 
 .art-rows .row:nth-child(even) div:nth-child(1) {
-  order: 1;  
+  order: 1;
 }
 
 .art-rows .row:nth-child(even) div:nth-child(2) {
-  order: 0;  
+  order: 0;
 }
 
 @media screen and (max-width: 768px) {
   .art-rows .row:nth-child(even) div:nth-child(1) {
-    order: 0;  
+    order: 0;
   }
 }
 
 .art-rows--content h3 {
   margin: 0 0 1.2rem;
 }
+
 
 /********************************* footer section styles *********************************/
 
@@ -259,6 +252,7 @@ footer {
 
 
 /**************************** Scholar search bar styles ****************************/
+
 
 /* form .yearbook-searchbar {
   width: 500px;
@@ -281,7 +275,7 @@ form .yearbook-searchbar {
 
 form .yearbook-searchbar input {
   color: #444;
-  border: 1px solid rgba(70, 0, 100, 0.208); 
+  border: 1px solid rgba(70, 0, 100, 0.208);
   padding-left: 10px;
   width: 500px;
   border-top-right-radius: 3px;
@@ -291,19 +285,6 @@ form .yearbook-searchbar input {
 form .yearbook-searchbar input:focus {
   outline: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* When an input field receives focus, make it stretch out 100%, good for search bars! (default: not applied) */
