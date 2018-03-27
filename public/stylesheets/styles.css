@@ -111,14 +111,18 @@ body {
   align-items: center;
 }
 
+.page-intro p {
+  line-height: 2;
+}
+
 
 /********************************* class photo section styles *********************************/
 
-.class-photos .intro p {
+/* .class-photos .intro p {
   text-align: center;
   max-width: 750px;
   margin: 0 auto;
-}
+} */
 
 .class-photos .class-photos--grid {
   display: flex;
@@ -127,6 +131,7 @@ body {
   margin: 0 auto 20px;
   min-width: 50%;
   max-width: 1430px;
+  margin: 4rem auto;
 }
 
 .class-photos .class-photos--grid .main-thumb {
@@ -136,7 +141,8 @@ body {
 .main-thumb img {
   width: 128px;
   transition: all .3s ease-in-out .03s;
-  border-radius: 15%;
+  border-radius: 10%;
+  box-shadow: 2px 1px 10px 3px lightgray;
 }
 
 .main-thumb:hover img {
