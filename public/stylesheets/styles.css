@@ -140,14 +140,20 @@ body {
 }
 
 
-/* section banner styles */
+/* section styles */
+section section {
+  padding: 6rem 0;
+}
 
 .section-banner {
   color: #fff;
   text-align: center;
+  padding: 2rem 0;
 }
 
-/* TODO: Create new font size for h4 sub heading */
+.section-banner h1+h4 {
+  font-size: 1.2rem;
+}
 
 .section-banner h1 {
   margin-bottom: 1.5rem;
@@ -202,18 +208,8 @@ body {
 
 /********************************* css art section styles *********************************/
 
-
-
-.art-rows div {
-  margin: 10px 0px;
-}
-
-.art-rows-content h3 {
-  margin-top: 10%;
-}
-
-.art-rows p {
-  width: 90%;
+.art-rows .row {
+  margin-bottom: 6rem;
 }
 
 .art-rows .row:nth-child(even) div:nth-child(1) {
@@ -230,6 +226,9 @@ body {
   }
 }
 
+.art-rows--content h3 {
+  margin: 0 0 1.2rem;
+}
 
 /********************************* footer section styles *********************************/
 
