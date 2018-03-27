@@ -147,6 +147,8 @@ body {
   text-align: center;
 }
 
+/* TODO: Create new font size for h4 sub heading */
+
 .section-banner h1 {
   margin-bottom: 1.5rem;
 }
@@ -160,14 +162,14 @@ body {
   background: linear-gradient(275deg, #00B3E4 0%, #31C5BD 100%);
 }
 
-.art-header--bg {
+.cssart--bg {
   background: linear-gradient(275deg, #A97ECD 0%, #D89BE3 100%);
 }
 
 
 /********************************* RSS resource section styles *********************************/
 
-.rss-grid {
+.resources-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
