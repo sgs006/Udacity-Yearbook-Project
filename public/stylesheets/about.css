@@ -21,9 +21,14 @@
 }
 
 .center-block {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.spacing {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
