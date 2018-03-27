@@ -204,16 +204,30 @@ body {
 
 
 
-.art--columns div {
-  margin: 10px 0px 10px 0px;
+.art-rows div {
+  margin: 10px 0px;
 }
 
-.art--columns-content h3 {
+.art-rows-content h3 {
   margin-top: 10%;
 }
 
-.art--columns p {
+.art-rows p {
   width: 90%;
+}
+
+.art-rows .row:nth-child(even) div:nth-child(1) {
+  order: 1;  
+}
+
+.art-rows .row:nth-child(even) div:nth-child(2) {
+  order: 0;  
+}
+
+@media screen and (max-width: 768px) {
+  .art-rows .row:nth-child(even) div:nth-child(1) {
+    order: 0;  
+  }
 }
 
 
@@ -263,6 +277,9 @@ form .yearbook-searchbar input {
 form .yearbook-searchbar input:focus {
   outline: none;
 }
+
+
+
 
 
 
