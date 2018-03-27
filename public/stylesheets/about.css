@@ -20,3 +20,10 @@
     margin-bottom: 30px;
 }
 
+.center-block {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
