@@ -128,7 +128,7 @@ body {
   margin: 0 auto 20px;
 }
 
-.main-thumb {
+/* .main-thumb {
   width: 165px;
   height: 200px;
   margin: 20px;
@@ -141,7 +141,7 @@ body {
 
 .main-thumb:hover {
   transform: scale(1.05);
-}
+} */
 
 
 /* section styles */
