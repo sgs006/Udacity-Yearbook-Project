@@ -40,6 +40,7 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   margin: 4rem auto;
+  border-radius: 3px;
 }
 
 .button:hover {
@@ -126,23 +127,23 @@ body {
 
 .class-photos .class-photos--grid {
   display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-  margin: 0 auto 20px;
+  flex-wrap: wrap;
   min-width: 50%;
   max-width: 1430px;
-  margin: 4rem auto;
+  margin: 4rem auto 6rem;
+  /* margin: 4rem auto 5rem; */
 }
 
 .class-photos .class-photos--grid .main-thumb {
   margin: 25px;
+  margin-bottom: 40px;
 }
 
 .main-thumb img {
   width: 128px;
   transition: all .3s ease-in-out .03s;
   border-radius: 10%;
-  box-shadow: 2px 1px 10px 3px lightgray;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
 }
 
 .main-thumb:hover img {
@@ -186,6 +187,9 @@ section section {
 
 
 /********************************* RSS resource section styles *********************************/
+#resources {
+  margin-top: 4rem;
+}
 
 .resources-grid {
   display: flex;
