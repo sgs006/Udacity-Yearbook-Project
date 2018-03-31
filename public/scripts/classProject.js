@@ -2,7 +2,8 @@
 //master
 
 $(document).ready(function(){
-// place code inside this function
+// Add <hr> after ecery section eleemnt in the resource group stack
+$('.resources-group section').after("<hr>");
 
 //*************************************************************
 //	Hamburger icon
@@ -20,7 +21,7 @@ $(document).ready(function(){
 //*************************************************************
 // End of Hamburger********************************************
 //*************************************************************
-    
+
 
 
 
