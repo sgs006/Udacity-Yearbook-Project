@@ -1,6 +1,3 @@
-:root {
-  --footer-height: 60px;
-}
 /* global styles */
 
 * {
@@ -11,7 +8,6 @@
 body {
   color: #525c65;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  padding-bottom: var(--footer-height);
 }
 
 a, a:hover {
@@ -256,10 +252,7 @@ section section {
 /********************************* footer section styles *********************************/
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: var(--footer-height);
+  height: 60px;
   line-height: 60px;
   color: #fff;
   background: linear-gradient(275deg, #AA7ECD 0%, #D89BE3 100%);
