@@ -1,13 +1,17 @@
+:root {
+  --footer-height: 60px;
+}
 /* global styles */
 
 * {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 body {
   color: #525c65;
   font-family: "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: var(--footer-height);
 }
 
 
@@ -250,7 +254,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: var(--footer-height);
   line-height: 60px;
   color: #fff;
   background: linear-gradient(275deg, #AA7ECD 0%, #D89BE3 100%);

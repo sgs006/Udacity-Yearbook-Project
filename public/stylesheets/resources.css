@@ -14,8 +14,8 @@
 
 #resources-interface {
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-column-gap: 20px;
+  grid-template-columns: 2fr 9fr 1fr;
+  /* grid-column-gap: 20px; */
 }
 
 #resources a {
