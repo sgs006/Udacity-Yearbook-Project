@@ -50,9 +50,6 @@ a, a:hover {
   color: #fff;
 }
 
-.over-the-fold--bottom {
-  height: 73vh;
-}
 /******************************* header & intro section styles *******************************/
 
 #mainHeader {
@@ -132,7 +129,8 @@ a, a:hover {
 .class-photos .class-photos--grid {
   display: flex;
   flex-wrap: wrap;
-  min-width: 50%;
+  width: 80%;
+  /* min-width: 50%; */
   max-width: 1430px;
   margin: 4rem auto 6rem;
   /* margin: 4rem auto 5rem; */
@@ -193,6 +191,7 @@ section section {
 /********************************* RSS resource section styles *********************************/
 #resources-section {
   margin-top: 4rem;
+  display: block;
 }
 
 .resources-grid {
