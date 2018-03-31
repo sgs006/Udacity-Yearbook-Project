@@ -8,6 +8,7 @@
 body {
   color: #525c65;
   font-family: "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 60px;
 }
 
 a, a:hover {
@@ -253,6 +254,9 @@ section section {
 /********************************* footer section styles *********************************/
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 60px;
   line-height: 60px;
   color: #fff;
