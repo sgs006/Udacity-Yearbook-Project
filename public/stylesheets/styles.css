@@ -82,7 +82,7 @@ a, a:hover {
 #mainHeader .intro {
   color: #fff;
   text-align: center;
-  padding: 2.2rem 0 1rem;
+  padding: 2.2rem 0;
 }
 
 #mainHeader .intro h1 {
