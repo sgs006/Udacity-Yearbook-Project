@@ -69,10 +69,14 @@ a, a:hover {
   font-size: 1.2rem;
 }
 
-#mainHeader nav a.active:not('.menu-icon'),
-#mainHeader nav a:hover:not('.menu-icon') {
+#mainHeader nav a:hover {
   padding-bottom: 5px;
   border-bottom: 2px solid #fff;
+}
+
+#mainHeader a.menu-icon:hover {
+  padding: 0; 
+  border: none;  
 }
 
 #mainHeader .intro {
