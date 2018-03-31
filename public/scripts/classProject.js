@@ -5,6 +5,8 @@ $(document).ready(function(){
 // Add <hr> after ecery section eleemnt in the resource group stack
 $('.resources-group section').after("<hr>");
 
+$('<a href="#resources">back to top</a>').insertBefore('.resources-group hr');
+
 //*************************************************************
 //	Hamburger icon
 //*************************************************************
