@@ -14,11 +14,14 @@ body {
   padding-bottom: var(--footer-height);
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 
 .yearbook-section {
   margin: 10px;
 }
-
 
 
 /* link resources styles */
@@ -51,6 +54,7 @@ body {
 }
 
 
+
 /******************************* header & intro section styles *******************************/
 
 #mainHeader {
@@ -65,12 +69,8 @@ body {
   font-size: 1.2rem;
 }
 
-#mainHeader nav a:hover {
-  text-decoration: none;
-}
-
-#mainHeader nav a.active,
-#mainHeader nav a:hover {
+#mainHeader nav a.active:not('.menu-icon'),
+#mainHeader nav a:hover:not('.menu-icon') {
   padding-bottom: 5px;
   border-bottom: 2px solid #fff;
 }
@@ -307,4 +307,14 @@ form .yearbook-searchbar input:focus {
 
 .stretch-100:focus {
   width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .small-hide {
+    display: none;
+  }
 }

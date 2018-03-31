@@ -2,10 +2,6 @@
   padding-bottom: 1.2rem;
 }
 
-#resources a {
-  text-decoration: none;
-}
-
 #resources-interface {
   display: grid;
   grid-template-columns: 2fr 9fr 1fr;

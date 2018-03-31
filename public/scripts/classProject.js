@@ -12,7 +12,7 @@ $('<a href="#resources">back to top</a>').insertBefore('.resources-group hr');
 //*************************************************************
 // Rename X var to something more useful
 	$(".menu-icon").on("click", function(){
-		$(this).css("font-size", "15px");
+		// $(this).css("font-size", "15px");
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
