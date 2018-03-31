@@ -11,3 +11,13 @@
 .page-links ul li {
   margin-bottom: 1.4rem;
 }
+
+#resources-interface {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-column-gap: 20px;
+}
+
+#resources a {
+  text-decoration: none;
+}
