@@ -1,3 +1,16 @@
+#resources {
+  padding-bottom: 1.2rem;
+}
+
+#resources a {
+  text-decoration: none;
+}
+
+#resources-interface {
+  display: grid;
+  grid-template-columns: 2fr 9fr 1fr;
+}
+
 #resources section {
   margin-bottom: 3rem;
 }
@@ -10,14 +23,4 @@
 
 .page-links ul li {
   margin-bottom: 1.4rem;
-}
-
-#resources-interface {
-  display: grid;
-  grid-template-columns: 2fr 9fr 1fr;
-  /* grid-column-gap: 20px; */
-}
-
-#resources a {
-  text-decoration: none;
 }
