@@ -8,10 +8,10 @@ $('.resources-group section').after("<hr>");
 $('<a href="#resources">back to top</a>').insertBefore('.resources-group hr');
 
 //*************************************************************
-//	Hamburger icon
+//	Hamburger menu-icon
 //*************************************************************
 // Rename X var to something more useful
-	$(".icon").on("click", function(){
+	$(".menu-icon").on("click", function(){
 		$(this).css("font-size", "15px");
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
