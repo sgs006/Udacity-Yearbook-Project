@@ -49,8 +49,9 @@ a, a:hover {
   color: #fff;
 }
 
-
-
+.over-the-fold--bottom {
+  height: 73vh;
+}
 /******************************* header & intro section styles *******************************/
 
 #mainHeader {
