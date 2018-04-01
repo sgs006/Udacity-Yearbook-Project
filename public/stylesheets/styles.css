@@ -55,6 +55,10 @@ a, a:hover {
   padding-top: 1.5rem;
 }
 
+.intro p {
+  line-height: 2;
+}
+
 /******************************* header & intro section styles *******************************/
 
 #mainHeader {
