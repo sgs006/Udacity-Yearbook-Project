@@ -4,7 +4,7 @@
  * @author robt9095wssas
  * @author rskovronuc6g
  * @desc Calls the JSON file from Google Docs to make the cards
- * @version 1.1
+ * @version 1.2
  */
 
 /** ***************************************
@@ -34,13 +34,14 @@ $(function() {
   $.getJSON(api).done(function(data) {
     /** @desc Array of JSON data */
     let arr = Array.from(data["Form Responses 1"]);
+    console.log(arr);
     /**
      * @desc Loops through the array of JSON to make cards
      * @param {object} element Each element the array with student data
      */
     arr.forEach(function(element) {
       /** @desc Conditional incase empty field for GIthub */
-      if (element.Github === "") {
+      if (element.Github_ID === "") {
         let defaultAvatar = "public/images/studentProfile.png";
         makeCard(element, defaultAvatar);
       } else {
@@ -48,10 +49,10 @@ $(function() {
          * @desc Github URL for each student
          * Conditional incase of full URL or just name
          */
-        let githubName = 
-            element.Github.includes("https") ?
-            element.Github.slice(element.Github.lastIndexOf("/") + 1) :
-            element.Github;
+        let githubName =
+          element.Github_ID.includes("https") ?
+            element.Github_ID.slice(element.Github_ID.lastIndexOf("/") + 1) :
+            element.Github_ID;
         let githubURL = `https://api.github.com/users/${githubName}`;
         /**
          * @desc Makes a call to github to get avatar image
@@ -64,7 +65,7 @@ $(function() {
           /**
            * @desc Calling the makeCard functionb
            * @arg {object} element JSON data from googlesheets
-           * @arg {string} avatar URL from github
+           * @arg {string} avatar Avatar URL from Github
            */
           makeCard(element, avatar);
         });
@@ -81,16 +82,32 @@ $(function() {
  ******************************************/
 /**
  * @desc Makes the cards with JSON data
- * @param {object} ele Takes an object to build each card
+ * @param {object} e Takes an object to build each card
+ * @param {string} avatar Avatar URL from Github
  */
-function makeCard(e, github) {
+function makeCard(e, avatar) {
+  /** @desc Checks for full URL or just ID */
+  const githubURL =
+    e.Github_ID.includes("https") ?
+      e.Github_ID :
+      `https://github.com/${e.Github_ID}`;
+  /** @desc Checks for numbers or Name */
+  const googlePlusURL =
+    e["Google+_ID"][0] < 65 ?
+      `https://plus.google.com/u/0/${e["Google+_ID"]}` :
+      `https://plus.google.com/u/0/+${e["Google+_ID"]}`;
+  /** @desc Converts twitter handle to full URL or just empty strings */
+  const twitterURL =
+    e.Twitter_ID ?
+      `https://twitter.com/${e.Twitter_ID}` :
+      "";
   const $divCols = $(`
     <div class="col-md-4 col-sm-6">
       <div class="card-container">
         <article class="card">
           <div class="front">
             <div class="cover"></div>
-            <div class="user"><img class="img-circle" src=${github} /></div>
+            <div class="user"><img class="img-circle" src=${avatar} /></div>
             <div class="content">
               <div class="main">
                 <h3 class="name">${e.First_Name} ${e.Last_Name}</h3>
@@ -128,9 +145,9 @@ function makeCard(e, github) {
             </div>
             <footer class="footer">
               <div class="social-links text-center">
-                <a href="#" target="_blank" class="github"><i class="fa fa-github fa-fw"></i></a>
-                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                <a class="github" href="${githubURL}" target="_blank"><i class="fa fa-github fa-fw"></i></a>
+                <a class="google" href="${googlePlusURL}" target="_blank"><i class="fa fa-google-plus fa-fw"></i></a>
+                <a class="twitter" href="${twitterURL}" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
               </div>
             </footer>
           </div>
