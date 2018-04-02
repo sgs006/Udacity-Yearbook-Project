@@ -7,19 +7,11 @@ $(document).ready(function() {
 
   $('<a href="#resources">back to top</a>').insertBefore('.resources-group hr');
 
-
-
-
-
-
   $(".menu-icon").on("click", function() {
 
     $(".dropdown .links").toggleClass("dropdown-content");
 
   });
   // end menu-icon function
-
-
-
 
 });
