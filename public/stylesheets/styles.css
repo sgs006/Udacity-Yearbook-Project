@@ -66,16 +66,27 @@ a, a:hover {
   background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
 }
 
+#mainHeader nav {
+  position: relative;
+}
+
 #mainHeader nav a {
   margin-right: 1.4rem;
   color: #fff;
   font-weight: 600;
   font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 #mainHeader nav a:hover {
   padding-bottom: 5px;
   border-bottom: 2px solid #fff;
+}
+
+#mainHeader a.menu-icon {
+  position: fixed;
+  top: 18px;
+  right: 0;
 }
 
 #mainHeader a.menu-icon:hover {
@@ -309,7 +320,21 @@ form .yearbook-searchbar input:focus {
     display: none;
   }
 
+  .menu-item {
+    display: block;
+    margin: 1.2rem 0;
+  }
+
   .class-photos .class-photos--grid {
     justify-content: center;
   }
+
+  #mainHeader nav a:hover {
+    padding: 0;
+    border: none;
+  }
+
+
+
+
 }
