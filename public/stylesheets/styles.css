@@ -321,6 +321,9 @@ form .yearbook-searchbar input:focus {
 /* Mobile styles */
 
 @media screen and (max-width: 768px) {
+  .dropdown {
+    padding: .50rem 0;
+  }
   .dropdown .links {
     padding-bottom: 1rem;
   }
