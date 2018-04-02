@@ -94,6 +94,8 @@ a:hover {
 }
 
 
+
+
 /* #mainHeader a.menu-icon {
   position: fixed;
   top: 18px;
@@ -331,9 +333,18 @@ form .yearbook-searchbar input:focus {
 /* Mobile styles */
 
 @media screen and (max-width: 768px) {
-  .small-hide {
+  /* .small-hide {
+    display: none;
+  } */
+
+  .dropdown .dropdown-content {
     display: none;
   }
+
+  #mainHeader nav a {
+    display: block;
+  }
+
   .menu-item {
     display: block;
     margin: 1.2rem 0;

@@ -14,13 +14,7 @@ $(document).ready(function() {
 
   $(".menu-icon").on("click", function() {
 
-    if ($('.small-hide').hasClass('small-hide')) {
-      $('.small-hide').removeClass('small-hide').addClass('menu-item');
-    } else {
-      $("#mainHeader a ~ a:not('.menu-icon')").addClass('small-hide').removeClass('menu-item');
-    }
-
-
+    $(".dropdown .links").toggleClass("dropdown-content");
 
   });
   // end menu-icon function
