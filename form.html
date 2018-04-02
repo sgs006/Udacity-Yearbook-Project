@@ -33,26 +33,28 @@
 </head>
 
 <body>
-  <!-- SKIP NAV (for screen readers) -->
-  <div id="skiplink" class="sr-only sr-only-focusable">
-      <!-- CHANGE HREF TO ID OF MAIN CONTENT SECTION  -->
-      <a href="#">skip to page content</a>
-    </div>
     
   <header id="mainHeader">
-    <nav class="container-fluid">
-      <a href="index.html" title="Home">Home</a>
-      <a href="yearbook.html" title="YearBook" class="small-hide">Yearbook</a>
-      <a href="resources.html" title="Resources" class="small-hide">Resources</a>
-      <a href="cssart.html" title="CSS Art Projects" class="small-hide">CSS Art Projects</a>
-      <a href="about.html" title="About" class="small-hide">About</a>
-      <a href="javascript:void(0);" class="menu-icon d-md-none float-right">&#9776;</a>
-      <!-- SKIP NAV (for screen readers) -->
-      <div id="skiplink" class="sr-only sr-only-focusable">
-        <!-- CHANGE HREF TO ID OF MAIN CONTENT SECTION  -->
-        <a href="#">skip to page content</a>
-      </div>
-    </nav>
+    <div class="container-fluid">
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="menu-icon d-md-none">&#9776;</a>
+    
+            <div class="links dropdown-content">
+              <nav>
+                <a href="index.html" title="Home" class="active">Home</a>
+                <a href="yearbook.html" title="YearBook">Yearbook</a>
+                <a href="resources.html" title="Resources">Resources</a>
+                <a href="cssart.html" title="CSS Art Projects">CSS Art Projects</a>
+                <a href="about.html" title="About">About</a>
+                <!-- SKIP NAV (for screen readers) -->
+                <div id="skiplink" class="sr-only sr-only-focusable">
+                  <!-- CHANGE HREF TO ID OF MAIN CONTENT SECTION  -->
+                  <a href="#">skip to page content</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+    </div>
   </header>
   <!-- =========== END WEBSITE NAVIGATION PANE ============ -->
   <!-- ====================== END MASTER SECTION ============= -->
