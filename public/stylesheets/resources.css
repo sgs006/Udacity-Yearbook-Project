@@ -1,0 +1,29 @@
+/* Resource page styles */
+
+#resources-interface {
+  display: grid;
+  grid-template-columns: 2fr 9fr 1fr;
+}
+
+#resources section {
+  margin-bottom: 3rem;
+}
+
+#resources .subheading {
+  margin-bottom: 2rem;
+}
+
+.page-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-links ul li {
+  margin-bottom: 1.4rem;
+}
+
+.resources-group dt {
+  font-size: 1.2rem;
+  margin: 1.6rem 0 .50rem;
+}

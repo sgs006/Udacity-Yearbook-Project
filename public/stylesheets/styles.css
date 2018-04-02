@@ -1,0 +1,361 @@
+@import url(resources.css);
+
+/* global styles */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: #525c65;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 60px;
+  background: #fff;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.yearbook-section {
+  margin: 10px;
+}
+
+
+/* link resources styles */
+
+.annotation {
+  font-style: italic;
+}
+
+
+/* button styles */
+
+.button {
+  display: block;
+  background: #00b3e4;
+  width: 60%;
+  padding: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 4rem auto;
+  border-radius: 3px;
+}
+
+.button:hover {
+  opacity: .8;
+  color: #fff;
+}
+
+#resources,
+#css-art,
+#aboutPage {
+  padding-top: 1rem;
+}
+
+.intro p {
+  line-height: 2;
+}
+
+
+/******************************* header & intro section styles *******************************/
+
+#mainHeader {
+  padding: 1.2rem 0;
+  background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
+}
+
+#mainHeader nav {
+  position: relative;
+}
+
+#mainHeader a {
+  margin-right: 1.4rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#mainHeader nav a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
+
+#mainHeader a.menu-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#mainHeader .intro {
+  color: #fff;
+  text-align: center;
+  padding: 2.2rem 0;
+}
+
+#mainHeader .intro h1 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#mainHeader .intro h2 {
+  font-weight: 300;
+}
+
+.page-intro {
+  text-align: center;
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.page-intro h2 {
+  margin-bottom: 2rem;
+}
+
+.page-intro .intro-content {
+  min-height: 130px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.page-intro p {
+  line-height: 2;
+}
+
+
+/********************************* class photo section styles *********************************/
+
+.class-photos .class-photos--grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 85%;
+  margin: 5rem auto;
+}
+
+.main-thumb img {
+  margin: 1rem;
+  border-radius: 3px;
+}
+
+
+/* section styles */
+
+#resources-section section,
+#cssart-section section {
+  padding: 6rem 0;
+}
+
+.section-banner {
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.section-banner h1+h4 {
+  font-size: 1.2rem;
+}
+
+.section-banner h1 {
+  margin-bottom: 1.5rem;
+}
+
+.section-banner h1,
+.section-banner h4 {
+  text-transform: uppercase;
+}
+
+.resources-header--bg {
+  background: linear-gradient(275deg, #00B3E4 0%, #31C5BD 100%);
+}
+
+.cssart--bg {
+  background: linear-gradient(275deg, #A97ECD 0%, #D89BE3 100%);
+}
+
+
+/********************************* RSS resource section styles *********************************/
+
+#resources-section {
+  margin-top: 4rem;
+  display: block;
+}
+
+.resources-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rss-thumb {
+  width: 200px;
+  height: 175px;
+  margin: 20px;
+  flex-basis: 200px;
+  flex-grow: 1;
+  box-shadow: 1px 1px 25px 0px rgba(46, 61, 73, 0.2);
+  margin: 20px 20px 120px 20px;
+  border: 2px solid #dde;
+  border-radius: 5px;
+  color: inherit;
+}
+
+.rss-content {
+  margin-top: 190px;
+  margin-left: 5px;
+}
+
+.rss-content h3 {
+  text-align: center;
+}
+
+
+/********************************* css art section styles *********************************/
+
+#cssart-section {
+  background: #fff;
+}
+
+.art-rows .row {
+  margin-bottom: 6rem;
+}
+
+.art-rows .row:nth-child(even) div:nth-child(1) {
+  order: 1;
+}
+
+.art-rows .row:nth-child(even) div:nth-child(2) {
+  order: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .art-rows .row:nth-child(even) div:nth-child(1) {
+    order: 0;
+  }
+}
+
+.art-rows--content h3 {
+  margin: 0 0 1.2rem;
+}
+
+
+/********************************* footer section styles *********************************/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  background: linear-gradient(275deg, #AA7ECD 0%, #D89BE3 100%);
+  text-align: center;
+}
+
+
+/**************************** Scholar search bar styles ****************************/
+
+
+/* form .yearbook-searchbar {
+  width: 500px;
+  border: 1px solid rgba(70, 0, 100, 0.208);
+  padding: 8px;
+  margin: 1rem 0 2.5rem;
+  color: #444;
+  border-radius: 3px;
+}
+
+form .yearbook-searchbar:focus {
+  outline: none;
+} */
+
+form .yearbook-searchbar {
+  /* margin: 1rem 0 2.5rem; */
+  margin: 0 0 2.5rem;
+  border-radius: 3px;
+}
+
+form .yearbook-searchbar input {
+  color: #444;
+  border: 1px solid rgba(70, 0, 100, 0.208);
+  padding-left: 10px;
+  width: 500px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+form .yearbook-searchbar input:focus {
+  outline: none;
+}
+
+
+/* When an input field receives focus, make it stretch out 100%, good for search bars! (default: not applied) */
+
+.stretch-100 {
+  transition: width 0.4s ease-in-out;
+}
+
+.stretch-100:focus {
+  width: 100%;
+}
+
+
+/* Mobile styles */
+
+@media screen and (max-width: 768px) {
+  .dropdown {
+    padding: .50rem 0;
+  }
+  .dropdown .links {
+    padding-bottom: 1rem;
+  }
+  .dropdown .dropdown-content {
+    display: none;
+  }
+  .menu-item {
+    display: block;
+    margin: 1.2rem 0;
+  }
+  .class-photos .class-photos--grid {
+    justify-content: center;
+  }
+  #mainHeader {
+    padding: 0;
+  }
+  #mainHeader nav a {
+    display: block;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  #mainHeader nav a:hover {
+    padding: 0;
+    border: none;
+  }
+  #mainHeader a.menu-icon {
+    margin: 0;
+  }
+  #mainHeader .intro {
+    padding: 0 0 2.2rem;
+  }
+  .page-intro {
+    width: 100%;
+  }
+}
