@@ -355,4 +355,7 @@ form .yearbook-searchbar input:focus {
   #mainHeader .intro {
     padding: 0 0 2.2rem;
   }
+  .page-intro {
+    width: 100%;
+  }
 }
