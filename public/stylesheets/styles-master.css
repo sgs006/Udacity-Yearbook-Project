@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 }
@@ -137,7 +137,7 @@ pre {
 .master-topnav a:hover {
     background: white;
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .master-active {
