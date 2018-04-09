@@ -17,20 +17,19 @@ function resourceData(data, tabletop) {
   for (var i = 0; i < data.length; i++) {
     $('.post').append(
       '<tr>' +
-      '<td id="col1">' +
+      '<td id="col1" scope="row">' +
       data[i].Resource +
       '</td>' +
-      '<td class="text">' +
+      '<td class="text" id = "' + data[i].Type + '">' +
       data[i].Type +
       '</td>' +
       '<td class="text">' +
       data[i].Description +
       '</td>' +
-      '<td id="address">' +
+      '<td id="address" class="dont-break-out">' +
       data[i].Link +
       '</td>' +
-      '</tr>' +
-      '</table>');
+      '</tr>' );
   }
 
 }
