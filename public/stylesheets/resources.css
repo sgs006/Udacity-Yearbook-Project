@@ -139,12 +139,6 @@ td {
 
 /*======================= END JUMP TO BUTTONS SECTION ==================*/
 
-.dont-break-out {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-all;
-}
-
 /*=============== FOOTER STYLES ================*/
 
 /*footer {

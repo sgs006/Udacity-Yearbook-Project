@@ -13,7 +13,6 @@ function init() {
 }
 
 function resourceData(data, tabletop) {
-  console.log(data);
   for (var i = 0; i < data.length; i++) {
     $('.post').append(
       '<tr>' +
@@ -26,8 +25,8 @@ function resourceData(data, tabletop) {
       '<td class="text">' +
       data[i].Description +
       '</td>' +
-      '<td id="address" class="dont-break-out">' +
-      data[i].Link +
+      '<td id="address"><a href ="' +
+      data[i].Link + '" target="_blank">Check it out!</a> ' +
       '</td>' +
       '</tr>' );
   }
