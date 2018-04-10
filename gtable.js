@@ -13,24 +13,22 @@ function init() {
 }
 
 function resourceData(data, tabletop) {
-  console.log(data);
   for (var i = 0; i < data.length; i++) {
     $('.post').append(
       '<tr>' +
-      '<td id="col1">' +
+      '<td id="col1" scope="row">' +
       data[i].Resource +
       '</td>' +
-      '<td class="text">' +
+      '<td class="text" id = "' + data[i].Type + '">' +
       data[i].Type +
       '</td>' +
       '<td class="text">' +
       data[i].Description +
       '</td>' +
-      '<td id="address">' +
-      data[i].Link +
+      '<td id="address"><a href ="' +
+      data[i].Link + '" target="_blank">Check it out!</a> ' +
       '</td>' +
-      '</tr>' +
-      '</table>');
+      '</tr>' );
   }
 
 }
