@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- ========= WEBSITES META INFORMATION INCLUDING STATUS BAR COLOR FOR MOBILE BROWSERS ========== -->
     <meta name="description" content="Grow with Google Scholarship 2018 - Udacity Community Yearbook. Yearbook project for 2018 GwG Cohort.">
     <meta name="msapplication-TileColor" content="#00B3E4">
     <meta name="theme-color" content="#00B3E4">
     <meta name="apple-mobile-web-app-status-bar-style" content="#00B3E4" />
     <!-- ===================== END WEBSITE META INFORMATION ========== -->
-    
+
     <!-- ============= SOCIAL MEDIA META PROPERTIES ================== -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -28,7 +28,7 @@
     <!-- ====================== END MASTER SECTION ============= -->
 
     <title>CSS Art | Udacity Community Yearbook</title>
-    
+
     <!-- ====================== MASTER MASTER SECTION ============= -->
     <!-- ======== CSS STYLESHEETS INCLUDING BOOTSTRAP 4 (https://getbootstrap.com) AND OPEN SANS FONT FROM GOOGLE ========= -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -37,12 +37,13 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700">
     <link rel="stylesheet" href="public/stylesheets/reboot.css">
-    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="public/stylesheets/styles-master.css">
     <!-- ===================== END CSS STYLESHEETS ========== -->
     <!-- ====================== END MASTER SECTION ============= -->
 
     <!-- ======== PAGE SPECIFIC STYLES ========= -->
-
+    <link rel="stylesheet" href="public/stylesheets/cssart.css">
+    <link rel="stylesheet" href="public/stylesheets/lightslider.css">
     <!-- ===================== END PAGE SPECIFIC STYLES ========= -->
 </head>
 
@@ -57,10 +58,10 @@
     <!-- =========== END SKIP NAVIGATION NEEDED FOR SCREEN READERS ============ -->
 
     <!-- ========  WEBSITE NAVIGATION SECTION ============ -->
-    <nav id="MainNav" class="topnav">
+    <nav id="MainNav" class="master-topnav">
         <a href="index.html" title="Home">Home</a>
         <a href="yearbook.html" title="YearBook">YearBook</a>
-        <a href="index.html#rss-main" title="Resources" title="">Resources</a>
+        <a href="resources.html" title="Resources" title="">Resources</a>
         <a href="cssart.html" title="CSS Art Projects">CSS Art Projects</a>
         <a href="about.html" title="About">About</a>
         <a href="javascript:void(0);" class="icon">&#9776;</a>
@@ -71,32 +72,193 @@
 
 
     <header>
-        <h1 class="pagetitle">CSS Art</h1>
+        <h1 class="master-pagetitle">CSS Art</h1>
     </header>
-    
+
     <!-- ========  EXAMPLE SECTION ============ -->
     <!-- NOTES:
                 If using Bootstrap styling
-                Each section should be placed with a pair of DIVs with classes of container or container-fluid and row 
+                Each section should be placed with a pair of DIVs with classes of container or container-fluid and row
             -->
     <div class="container-fluid">
         <div class="row" role="row">
             <div class="col">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-                Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus
-                sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
-                litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim
-                lacinia nunc.
+                <div class="challenge-title section">Challenge #1 - Taco Challenge.</div>
+
+                <div class="challenge-disc">Create CSS art that is taco-related. It can be one taco or many tacos! Maybe it’s hot sauce for a taco, taco
+                    ingredients on a table, maybe it’s a hungry taco, a sad taco, maybe its shell is broken and it’s a ghost!
+                    Maybe it’s a taco sitting on a couch watching tv. Let this topic be creative - you can take it as literal
+                    or abstract as you want - build a lonely taco or create a scene - but it must be related to the topic
+                    in some way! It can be as simple or complex as you want it to be! These are just ideas! Taco ice cream?
+                    A choco taco? Taco zombie? You choose, Pikachu!
+                </div>
+                <div class="demo">
+                    <ul id="lightSlider">
+
+                        <li data-thumb="public/images/cssart/tacosurprise.png">
+                            <a href="https://codepen.io/Maeb/pen/ZvqYjr">
+                                <img src="public/images/cssart/tacosurprise.png" />
+                            </a>
+                            <div class="caption">by @maebee2319</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/chocotaco.png">
+                            <a href="https://codepen.io/JavaScriptErika/full/OzYBor/">
+                                <img src="public/images/cssart/chocotaco.png" />
+                            </a>
+                        </li>
+                        <li data-thumb="public/images/cssart/thefriendlytaco.png">
+                            <a href="https://codepen.io/MonicaJeanB/pen/goyyPg">
+                                <img src="public/images/cssart/thefriendlytaco.png" />
+                            </a>
+                        </li>
+                        <li data-thumb="public/images/cssart/tacoboy.png">
+                            <a href="https://codepen.io/quiwah/pen/LeoVwr">
+                                <img src="public/images/cssart/tacoboy.png" />
+                            </a>
+                        </li>
+                        <li data-thumb="public/images/cssart/manvsfood.png">
+                            <a href="https://codepen.io/bloom305/full/aEevdJ/">
+                                <img src="public/images/cssart/manvsfood.png" />
+                            </a>
+                        </li>
+                        <li data-thumb="public/images/cssart/purecsstaco.png">
+                            <a href="https://codepen.io/markopolo91/full/QaReWg/">
+                                <img src="public/images/cssart/purecsstaco.png" />
+                            </a>
+                        </li>
+                        <li data-thumb="public/images/cssart/letstacoboutit.png">
+                            <a href="https://codepen.io/AmberRoberts/pen/YYmgGe">
+                                <img src="public/images/cssart/letstacoboutit.png" />
+                            </a>
+                        </li>
+                        <li data-thumb="public/images/cssart/miniontaco.png">
+                            <a href="https://codepen.io/kdterrell125/pen/ZvgZpX">
+                                <img src="public/images/cssart/miniontaco.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row" role="row">
+            <div class="col">
+                <div class="challenge-title section">Challenge 2 - Video Game Inspired</div>
+                <div class="challenge-disc">Create an image or scene via CSS that is somehow related to your favorite video game character(s) and/or
+                    element(s). It can be any style you’d like, or maybe you want to replicate a character and/or element
+                    exactly! It doesn’t have to be taken in the literal sense either - incorporate this topic however abstractly
+                    or creatively you’d like - it just must incorporate the essence! Btw, It can be any type of video game
+                    you’d like to draw inspiration from - arcade or not!</div>
+                <div class="demo">
+                    <ul id="lightSlider2">
+                        <li data-thumb="public/images/cssart/2-navi.png">
+                            <a href=https://codepen.io/Maeb/full/eVzKgq/>
+                            <img src="public/images/cssart/2-navi.png" />
+                            </a>
+                            <div class="caption">Navi by maebee2319</div>
+                            <li data-thumb="public/images/cssart/2-pokeball.png">
+                                <a href=https://codepen.io/markopolo91/full/MQJoVW/>
+                                <img src="public/images/cssart/2-pokeball.png" />
+                                </a>
+                                <div class="caption">Pure CSS Pokeball by markopolo91</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-yoshi.png">
+                                <a href=https://codepen.io/MonicaJeanB/full/bLBYOX/>
+                                <img src="public/images/cssart/2-yoshi.png" />
+                                </a>
+                                <div class="caption">Yoshi by monica.j.beauchampuv</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-kirby.png">
+                                <a href=https://codepen.io/LeafDragon/full/WMeEVO/>
+                                <img src="public/images/cssart/2-kirby.png" />
+                                </a>
+                                <div class="caption">CSS Kirby Challenge by fdip123496cq0</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-ori.png">
+                                <a href=https://codepen.io/JavaScriptErika/full/WMeEwr/>
+                                <img src="public/images/cssart/2-ori.png" />
+                                </a>
+                                <div class="caption">Ori and the Blind Forest by erika_ritter</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-redxiii.png">
+                                <a href=https://codepen.io/ksedar/full/JpWjXd/>
+                                <img src="public/images/cssart/2-redxiii.png" />
+                                </a>
+                                <div class="caption">Red XIII by yuka.mullen</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-healthbars.png">
+                                <a href="https://codepen.io/ksedar/full/JpWjXd/">
+                                    <img src="public/images/cssart/2-healthbars.png">
+                                </a>
+                                <div class="caption">Health/Mana Bars by ksedar2408</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-megaman.png">
+                                <a href=https://codepen.io/OMGLexxie/full/ddvYRO/>
+                                <img src="public/images/cssart/2-megaman.png" />
+                                </a>
+                                <div class="caption">Mega Man - Challenge #21 by slynn</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-duckhunt.png">
+                                <a href=https://codepen.io/FlyingDad/full/eVOPPo/>
+                                <img src="public/images/cssart/2-duckhunt.png" />
+                                </a>
+                                <div class="caption">Duck Hunt by QuattroDog</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-dreamshield.png">
+                                <a href=https://codepen.io/alexh921/full/rJVvwx/>
+                                <img src="public/images/cssart/2-dreamshield.png" />
+                                </a>
+                                <div class="caption">Goofy’s Dream Shield by eagle92190</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-mspacman.png">
+                                <a href=https://codepen.io/andranique/pen/JpWrZV>
+                                    <img src="public/images/cssart/2-mspacman.png" />
+                                </a>
+                                <div class="caption">Ms. Pacman by andranique</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-gameboy.png">
+                                <a href=https://codepen.io/amyyf/full/rJBypJ/>
+                                <img src="public/images/cssart/2-gameboy.png" />
+                                </a>
+                                <div class="caption">CSS Only: GameBoy1 by amyf</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-sonic.png">
+                                <a href=https://codepen.io/remenapp/full/MQKOmr/>
+                                <img src="public/images/cssart/2-sonic.png" />
+                                </a>
+                                <div class="caption">Sonic! by remenapp</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/2-gameboy2.png">
+                                <a href=https://codepen.io/tinyvial/full/zRzWpe/>
+                                <img src="public/images/cssart/2-gameboy2.png" />
+                                </a>
+                                <div class="caption">Original Game Boy (Lost in Pokemon) by judyg</div>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <!-- =========== END EXAMPLE SECTION ============ -->
-
-    
-
     <!-- ====================== MASTER MASTER SECTION ============= -->
     <!-- ====================== FOOTER ============= -->
-    <!-- FOOTER CONTENT HERE -->
+    <footer>
+        <div class="master-footer text-center">
+            <nav>
+                <a href="index.html" title="Home">Home |</a>
+                <a href="yearbook.html" title="Yearbook">Yearbook | </a>
+                <a href="resources.html" title="Resources">Resources |</a>
+                <a href="cssart.html" title="CSS Art Projects">CSS Art Projects |</a>
+                <a href="about.html" title="About">About</a>
+            </nav>
+            &copy; 2018 Udacity: Grow with Google Front End Scholars </a>
+
+        </div>
+    </footer>
     <!-- ====================== END FOOTER ============= -->
     <!-- ====================== END MASTER SECTION ============= -->
 
@@ -112,10 +274,103 @@
     <!-- ================= INCLUDING OF SCRIPT FILES END HERE =====================  -->
     <!-- ====================== END MASTER SECTION ============= -->
 
-
-
     <!-- ======== PAGE SPECIFIC JAVASCRIPT ========= -->
+    <script src="public/scripts/cssart.js"></script>
+    <script src="public/lib/lightslider.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lightSlider").lightSlider({
+                item: 3,
+                autoWidth: true,
+                slideMove: 1, // slidemove will be 1 if loop is true
+                slideMargin: 15,
 
+                // addClass: '',
+                // mode: "slide",
+                // useCSS: true,
+                // cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+                // easing: 'linear', //'for jquery animation',////
+                //
+                // speed: 400, //ms'
+                // auto: false,
+                // loop: false,
+                // slideEndAnimation: true,
+                // pause: 2000,
+                //
+                // keyPress: false,
+                // controls: true,
+                // prevHtml: '',
+                // nextHtml: '',
+                //
+                // rtl:false,
+                // adaptiveHeight:false,
+                //
+                // vertical:false,
+                // verticalHeight:600,
+                // vThumbWidth:100,
+                //
+                // thumbItem:10,
+                // pager: true,
+                // gallery: true,
+                // galleryMargin: 5,
+                // thumbMargin: 5,
+                // currentPagerPosition: 'middle',
+                //
+                // enableTouch:true,
+                // enableDrag:true,
+                // freeMove:true,
+                // swipeThreshold: 40,
+                //
+                // responsive : [],
+
+                onBeforeStart: function (el) {},
+
+                onSliderLoad: function (el) {
+                    var maxHeight = 0,
+                        container = $(el),
+                        children = container.children();
+
+                    children.each(function () {
+                        var childHeight = $(this).height();
+                        if (childHeight > maxHeight) {
+                            maxHeight = childHeight;
+                        }
+                    });
+                    container.height(maxHeight);
+                },
+                onBeforeSlide: function (el) {},
+                onAfterSlide: function (el) {},
+                onBeforeNextSlide: function (el) {},
+                onBeforePrevSlide: function (el) {}
+            });
+        });
+        $(document).ready(function () {
+            $("#lightSlider2").lightSlider({
+                item: 3,
+                slideMove: 1, // slidemove will be 1 if loop is true
+                slideMargin: 15,
+
+                onBeforeStart: function (el) {},
+                onSliderLoad: function (el) {
+                    var maxHeight = 0,
+                        container = $(el),
+                        children = container.children();
+
+                    children.each(function () {
+                        var childHeight = $(this).height();
+                        if (childHeight > maxHeight) {
+                            maxHeight = childHeight;
+                        }
+                    });
+                    container.height(maxHeight);
+                },
+                onBeforeSlide: function (el) {},
+                onAfterSlide: function (el) {},
+                onBeforeNextSlide: function (el) {},
+                onBeforePrevSlide: function (el) {}
+            });
+        });
+    </script>
     <!-- ===================== END PAGE SPECIFIC JAVASCRIPT ========= -->
 </body>
 
