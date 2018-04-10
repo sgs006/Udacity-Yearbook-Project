@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- ========= WEBSITES META INFORMATION INCLUDING STATUS BAR COLOR FOR MOBILE BROWSERS ========== -->
     <meta name="description" content="Grow with Google Scholarship 2018 - Udacity Community Yearbook. Yearbook project for 2018 GwG Cohort.">
     <meta name="msapplication-TileColor" content="#00B3E4">
     <meta name="theme-color" content="#00B3E4">
     <meta name="apple-mobile-web-app-status-bar-style" content="#00B3E4" />
     <!-- ===================== END WEBSITE META INFORMATION ========== -->
-    
+
     <!-- ============= SOCIAL MEDIA META PROPERTIES ================== -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -37,7 +37,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700">
     <link rel="stylesheet" href="public/stylesheets/reboot.css">
-    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="public/stylesheets/styles-master.css">
     <!-- ===================== END CSS STYLESHEETS ========== -->
     <!-- ====================== END MASTER SECTION ============= -->
 
@@ -57,10 +57,10 @@
     <!-- =========== END SKIP NAVIGATION NEEDED FOR SCREEN READERS ============ -->
 
     <!-- ========  WEBSITE NAVIGATION SECTION ============ -->
-    <nav id="MainNav" class="topnav">
+    <nav id="MainNav" class="master-topnav">
         <a href="index.html" title="Home">Home</a>
         <a href="yearbook.html" title="YearBook">YearBook</a>
-        <a href="index.html#rss-main" title="Resources" title="">Resources</a>
+        <a href="resources.html" title="Resources" title="">Resources</a>
         <a href="cssart.html" title="CSS Art Projects">CSS Art Projects</a>
         <a href="about.html" title="About">About</a>
         <a href="javascript:void(0);" class="icon">&#9776;</a>
@@ -87,10 +87,10 @@
         <div class="row">
             <div class="col-lg-12 text-center" id="searchBar">
                 <input type="text" name="search" placeholder="Search Scholars..">
-               
+
             </div>
         </div>
-        
+
         <div class="row" id="cardRow">
             <!-- Card 1 -->
             <div class="col-md-4 col-sm-6">
@@ -334,7 +334,7 @@
 
         </div>
         <div class="cardDisplay">
-        <!-- end cardRow -->
+            <!-- end cardRow -->
         </div>
         <div class="cardDisplay2">
         </div>
@@ -344,45 +344,21 @@
     </div>
     <!-- end container-->
 
-    <footer class="pageFooter text-center">
-      <div class="contianer">
-        <span >All right reserved. Designed and developed by Grow with Google Front End Scholars 2018.</span>
-      </div>
-    </footer>
-
-
-    <!-- <div class="yearbook-section">
-    <h2 class="yearbook-names">Rob Goelz</h2>
-    <ul>
-      <li><a href="https://codepen.io/RobGoelz/pen/WdgrLX">Animal Trading Card</a></li>
-      <li><a href="https://github.com/RobGoelz">GitHub Profile</a></li>
-    </ul>
-    <p class="yearbook-quote">
-      <a href="http://i.imgur.com/vaUAz.jpg.jpg">Litany Against Fear</a>
-    </p>
-
-    <h2 class="yearbook-names">Kathryn Patterson</h2>
-    <ul>
-        <li><a href="https://codepen.io/katfrog/pen/WdyxOx">Guinea Pig Trading Card</a></li>
-        <li><a href="https://katfrog.github.io/pixel-art-maker/">Pixel Art Maker</a></li>
-    </ul>
-    <p>It's the end of the world as we know it, and I feel fine. - REM</p>
-
-    <h2 class="yearbook-names">Sam Stokes</h2>
-    <ul>
-      <li><a href="https://codepen.io/Mithrawn/pen/xpjJYQ">Mockup to Article</a></li>
-      <li><a href="https://codepen.io/Mithrawn/pen/ypEwqX">Animal Trading Card</a></li>
-      <li><a href="www.google.com">Pixelart Maker</a></li>
-    </ul>
-    <p class="yearbook-quote">Dream the impossible dream -Somebody</p>
-
-  </div> -->
-
-
-
     <!-- ====================== MASTER MASTER SECTION ============= -->
     <!-- ====================== FOOTER ============= -->
-    <!-- FOOTER CONTENT HERE -->
+    <footer>
+        <div class="master-footer text-center">
+            <nav>
+                <a href="index.html" title="Home">Home |</a>
+                <a href="yearbook.html" title="Yearbook">Yearbook | </a>
+                <a href="resources.html" title="Resources">Resources |</a>
+                <a href="cssart.html" title="CSS Art Projects">CSS Art Projects |</a>
+                <a href="about.html" title="About">About</a>
+            </nav>
+            &copy; 2018 Udacity: Grow with Google Front End Scholars </a>
+    
+        </div>
+    </footer>
     <!-- ====================== END FOOTER ============= -->
     <!-- ====================== END MASTER SECTION ============= -->
 
@@ -399,7 +375,7 @@
     <!-- ====================== END MASTER SECTION ============= -->
 
 
-    
+
     <!-- ======== PAGE SPECIFIC JAVASCRIPT ========= -->
     <script type="text/javascript">
         $().ready(function () {
@@ -418,9 +394,9 @@
         }
 
         //function repeatCard() {
-        for(var i = 1; i<4; i++){
+        for (var i = 1; i < 4; i++) {
             $(".cardDisplay").append('<div class="row" id="repeatCards"></div>');
-            for(var i = 0; i<3; i++){
+            for (var i = 0; i < 3; i++) {
                 $("#repeatCards").append('<div class="col-md-4 col-sm-6">' +
                     '<div class="card-container"><div class="card"><div class="front"><div class="cover">' +
                     '</div><div class="user">' +
@@ -432,16 +408,16 @@
                     '</div><div class="content"><div class="main">' +
                     '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
                     '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
-                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' + 
+                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' +
                     '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
                     '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
-                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');  
+                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');
             }
         }
 
-        for(var i = 1; i<4; i++){
+        for (var i = 1; i < 4; i++) {
             $(".cardDisplay2").append('<div class="row" id="repeatCards"></div>');
-            for(var i = 0; i<3; i++){
+            for (var i = 0; i < 3; i++) {
                 $("#repeatCards").append('<div class="col-md-4 col-sm-6">' +
                     '<div class="card-container"><div class="card"><div class="front"><div class="cover">' +
                     '</div><div class="user">' +
@@ -453,16 +429,16 @@
                     '</div><div class="content"><div class="main">' +
                     '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
                     '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
-                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' + 
+                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' +
                     '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
                     '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
-                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');  
+                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');
             }
         }
 
-        for(var i = 1; i<4; i++){
+        for (var i = 1; i < 4; i++) {
             $(".cardDisplay3").append('<div class="row" id="repeatCards"></div>');
-            for(var i = 0; i<3; i++){
+            for (var i = 0; i < 3; i++) {
                 $("#repeatCards").append('<div class="col-md-4 col-sm-6">' +
                     '<div class="card-container"><div class="card"><div class="front"><div class="cover">' +
                     '</div><div class="user">' +
@@ -474,10 +450,10 @@
                     '</div><div class="content"><div class="main">' +
                     '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
                     '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
-                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' + 
+                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' +
                     '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
                     '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
-                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');  
+                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>');
             }
         }
        //}
