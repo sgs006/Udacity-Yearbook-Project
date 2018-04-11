@@ -4,19 +4,18 @@ body {
     background-color: #E5E9ED;
 }
 
-.jumbotron {
+.master-jumbotron {
     background: linear-gradient(90deg, #31C5BD, #A97ECD);
     color: whitesmoke;
 }
 
-.btn:hover,
-.btn:focus,
-.btn:active {
+.master-btn:hover,
+.master-btn:focus,
+.master-btn:active {
     outline: 0 !important;
 }
 
 /* Animated Search Bar from W3 */
-
 input[type=text] {
     width: 650px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -24,22 +23,20 @@ input[type=text] {
 }
 
 /* When the input field gets focus, change its width to 100% */
-
 input[type=text]:focus {
     width: 100%;
 }
 
-#searchBar {
+#master-searchBar {
     margin: 30px;
 }
-
 /**************************/
 
 /* entire container, keeps perspective */
 
 /*      Just for presentation        */
 
-.title {
+.master-title {
     color: #506A85;
     text-align: center;
     font-weight: 300;
@@ -48,42 +45,42 @@ input[type=text]:focus {
     line-height: 90%;
 }
 
-.title small {
+.master-title small {
     font-size: 17px;
     color: #999;
     text-transform: uppercase;
     margin: 0;
 }
 
-.space-30 {
+.master-space-30 {
     height: 30px;
     display: block;
 }
 
-.space-50 {
+.master-space-50 {
     height: 50px;
     display: block;
 }
 
-.space-200 {
+.master-space-200 {
     height: 200px;
     display: block;
 }
 
-.btn-simple {
+.master-btn-simple {
     opacity: .8;
     color: #666666;
     background-color: transparent;
 }
 
-.btn-simple:hover,
-.btn-simple:focus {
+.master-btn-simple:hover,
+.master-btn-simple:focus {
     background-color: transparent;
     box-shadow: none;
     opacity: 1;
 }
 
-.btn-simple i {
+.master-btn-simple i {
     font-size: 16px;
 }
 
@@ -91,20 +88,20 @@ input[type=text]:focus {
 
 @media screen and (-ms-high-contrast: active),
 (-ms-high-contrast: none) {
-    .front,
-    .back {
+    .master-front,
+    .master-back {
         -ms-backface-visibility: visible;
         backface-visibility: visible;
     }
-    .back {
+    .master-back {
         visibility: hidden;
         -ms-transition: all 0.2s cubic-bezier(.92, .01, .83, .67);
     }
-    .front {
+    .master-front {
         z-index: 4;
     }
-    .card-container:not(.manual-flip):hover .back,
-    .card-container.manual-flip.hover .back {
+    .master-card-container:not(.manual-flip):hover .back,
+    .master-card-container.manual-flip.hover .back {
         z-index: 5;
         visibility: visible;
     }
