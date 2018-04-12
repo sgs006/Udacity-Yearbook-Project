@@ -11,7 +11,7 @@ body {
 }
 
 .master-footer{
-  position: relate;
+  position: fixed;
   bottom: 0;
   padding-top: 10px;
   width: 100%;
@@ -196,7 +196,7 @@ pre {
     background: linear-gradient(275deg, #A97ECD 0%, #D89BE3 100%);
 }
 
-.card-container {
+.master-card-container {
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
     -o-perspective: 800px;
@@ -206,16 +206,16 @@ pre {
 
 /* flip the pane when hovered */
 
-.card-container:not(.manual-flip):hover .card,
-.card-container.hover.manual-flip .card {
+.master-card-container:not(.manual-flip):hover .card,
+.master-card-container.hover.manual-flip .card {
     -webkit-transform: rotateY( 180deg);
     -moz-transform: rotateY( 180deg);
     -o-transform: rotateY( 180deg);
     transform: rotateY( 180deg);
 }
 
-.card-container.static:hover .card,
-.card-container.static.hover .card {
+.master-card-container.static:hover .card,
+.master-card-container.static.hover .card {
     -webkit-transform: none;
     -moz-transform: none;
     -o-transform: none;
@@ -224,7 +224,7 @@ pre {
 
 /* flip speed goes here */
 
-.card {
+.master-card {
     -webkit-transition: -webkit-transform .5s;
     -moz-transition: -moz-transform .5s;
     -o-transition: -o-transform .5s;
@@ -238,8 +238,8 @@ pre {
 
 /* hide back of pane during swap */
 
-.front,
-.back {
+.master-front,
+.master-back {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
@@ -253,13 +253,13 @@ pre {
 
 /* front pane, placed above back */
 
-.front {
+.master-front {
     z-index: 2;
 }
 
 /* back, initially hidden pane */
 
-.back {
+.master-back {
     -webkit-transform: rotateY( 180deg);
     -moz-transform: rotateY( 180deg);
     -o-transform: rotateY( 180deg);
@@ -267,7 +267,7 @@ pre {
     z-index: 3;
 }
 
-.back .btn-simple {
+.master-back .btn-simple {
     position: absolute;
     left: 0;
     bottom: 4px;
@@ -275,32 +275,32 @@ pre {
 
 /*        Style       */
 
-.card {
+.master-card {
     background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 4px;
     color: #444444;
 }
 
-.card-container,
-.front,
-.back {
+.master-card-container,
+.master-front,
+.master-back {
     width: 100%;
     height: 420px;
     border-radius: 4px;
 }
 
-.card .cover {
+.master-card .cover {
     height: 105px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
     background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
 }
 
-.card .cover img {
+.master-card .cover img {
     width: 100%;
 }
 
-.card .user {
+.master-card .user {
     border-radius: 50%;
     display: block;
     height: 120px;
@@ -310,27 +310,27 @@ pre {
     object-fit: cover;
 }
 
-.card .user img {
+.master-card .user img {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 4px solid #FFFFFF;
     width: 100%;
 }
 
-.card .content {
+.master-card .content {
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
     padding: 10px 20px 20px;
 }
 
-.card .content .main {
+.master-card .content .main {
     min-height: 160px;
 }
 
-.card .back .content .main {
+.master-card .back .content .main {
     height: 215px;
 }
 
-.card .name {
+.master-card .name {
     font-size: 22px;
     line-height: 28px;
     margin: 10px 0 0;
@@ -338,19 +338,19 @@ pre {
     text-transform: capitalize;
 }
 
-.card h5 {
+.master-card h5 {
     margin: 5px 0;
     font-weight: 400;
     line-height: 20px;
 }
 
-.card .profession {
+.master-card .profession {
     color: #999999;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.card .footer {
+.master-card .footer {
     border-top: 1px solid #EEEEEE;
     color: #999999;
     margin: 30px 0 0;
@@ -358,24 +358,24 @@ pre {
     text-align: center;
 }
 
-.card .footer .social-links {
+.master-card .footer .social-links {
     font-size: 18px;
 }
 
-.card .footer .social-links a {
+.master-card .footer .social-links a {
     margin: 0 7px;
 }
 
-.card .footer .btn-simple {
+.master-card .footer .btn-simple {
     margin-top: -6px;
 }
 
-.card .header {
+.master-card .header {
     padding: 15px 20px;
     height: 90px;
 }
 
-.card .motto {
+.master-card .motto {
     border-bottom: 1px solid #EEEEEE;
     color: #999999;
     font-size: 14px;
@@ -384,32 +384,32 @@ pre {
     text-align: center;
 }
 
-.card .stats-container {
+.master-card .stats-container {
     width: 100%;
     margin-top: 50px;
 }
 
-.card .stats {
+.master-card .stats {
     display: block;
     float: left;
     width: 33.333333%;
     text-align: center;
 }
 
-.card .stats:first-child {
+.master-card .stats:first-child {
     border-right: 1px solid #EEEEEE;
 }
 
-.card .stats:last-child {
+.master-card .stats:last-child {
     border-left: 1px solid #EEEEEE;
 }
 
-.card .stats h4 {
+.master-card .stats h4 {
     font-weight: 300;
     margin-bottom: 5px;
 }
 
-.card .stats p {
+.master-card .stats p {
     color: #777777;
 }
 
@@ -422,14 +422,14 @@ END YEARBOOK CARD DESIGN SECTION HERE
 	Guide:	Please use an id for your section and not a class. This will be your own unique space to style how you want.
 **********************************************************************************************************************/
 
-.pagetitle {
+.master-pagetitle {
     margin: 10px;
 }
 
-.intro {
+.master-intro {
     margin: 10px;
 }
 
-.yearbook-section {
+.master-yearbook-section {
     margin: 10px;
 }
