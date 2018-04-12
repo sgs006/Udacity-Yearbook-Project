@@ -95,7 +95,12 @@ button:hover {
     margin: 5%;
 }
 
-.master-main-grid {
+.main-a {
+  border-bottom: 1px solid #91daee;
+  /* link style from https://www.udacity.com/grow-with-google */
+}
+
+.main-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
