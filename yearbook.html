@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-US">
 <head>
     <!-- ====================== MASTER MASTER SECTION ============= -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -37,13 +36,15 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700">
     <link rel="stylesheet" href="public/stylesheets/reboot.css">
-    <link rel="stylesheet" href="public/stylesheets/style-master.css">
+    <link rel="stylesheet" href="public/stylesheets/styles-master.css">
     <!-- ===================== END CSS STYLESHEETS ========== -->
     <!-- ====================== END MASTER SECTION ============= -->
 
     <!-- ======== PAGE SPECIFIC STYLES ========= -->
     <link href='public/stylesheets/rotating-card.css' rel='stylesheet' />
+    <link href='public\stylesheets\yearbook.css' rel='stylesheet' />
     <!-- ===================== END PAGE SPECIFIC STYLES ========= -->
+
 </head>
 
 <body>
@@ -68,8 +69,6 @@
     <!-- =========== END WEBSITE NAVIGATION PANE ============ -->
     <!-- ====================== END MASTER SECTION ============= -->
 
-
-
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h4 class="lead text-center">UDACITY: GROW WITH GOOGLE 2018</h4>
@@ -86,297 +85,15 @@
         </section>
         <div class="row">
             <div class="col-lg-12 text-center" id="searchBar">
-                <input type="text" name="search" placeholder="Search Scholars..">
-
+                <input type="text" id="search-input" name="search" style="max-width: 70%; height: 38px" placeholder="Search Scholars by Name...">
+				<button id="search-button" class="btn btn-success" style="margin-top: -8px;" type="button">Search</button>
             </div>
         </div>
-
+		<div id="search-state" class="search-info"><div class="loader"></div></div>
         <div class="row" id="cardRow">
-            <!-- Card 1 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="master-card-container">
-                    <div class="master-card">
-                        <div class="master-front">
-                            <div class="cover">
-                                <img src="public/images/rotating_card_thumb1.png" />
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="public/images/Profile1.png" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Carlota Pearl</h3>
-                                    <p class="profession">Developer-In-Training</p>
-
-                                    <p class="text-center">"This experience has been eye-opening and the course strenghten my skills in web development."</p>
-                                </div>
-                                <div class="master-footer">
-                                    <div class="rating">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end front panel -->
-                        <div class="master-back">
-                            <div class="header">
-                                <h5 class="motto">"#deepwork #grit #stickthelanding"</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Front End Favorites:</h4>
-                                    <p class="text-center">Web design, Mockups, and Agile development</p>
-
-                                    <div class="stats-container">
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>4</h4>
-                                            <p>
-                                                Projects
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="master-footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="github">
-                                        <i class="fa fa-github fa-fw"></i>
-                                    </a>
-                                    <a href="#" class="google">
-                                        <i class="fa fa-google-plus fa-fw"></i>
-                                    </a>
-                                    <a href="#" class="twitter">
-                                        <i class="fa fa-twitter fa-fw"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end back panel -->
-                    </div>
-                    <!-- end card -->
-                </div>
-                <!-- end card-container -->
-            </div>
-            <!-- end col sm 6 -->
-            <!--         <div class="col-sm-1"></div> -->
-            <!-- Card 2 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="master-card-container">
-                    <div class="master-card">
-                        <div class="master-front">
-                            <div class="cover">
-                                <img src="public/images/rotating_card_thumb2.png" />
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="public/images/Profile2.png" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Sam Stokes</h3>
-                                    <p class="profession">Creater of the Google Udacity 2018 Yearbook</p>
-
-                                    <p class="text-center">"I work in education but want to be a web developer!"</p>
-                                </div>
-                                <div class="master-footer">
-                                    <div class="rating">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end front panel -->
-                        <div class="master-back">
-                            <div class="header">
-                                <h5 class="motto">"Cool catchy phrase or website link"</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Front End Favorites:</h4>
-                                    <p class="text-center">HTML5, CSS3, and JavaScript! </p>
-
-                                    <div class="stats-container">
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>4</h4>
-                                            <p>
-                                                Projects
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="master-footer">
-                                <div class="social-links text-center">
-                                    <a href="https://github.com/sgs006" target="_blank" class="github">
-                                        <i class="fa fa-github fa-fw"></i>
-                                    </a>
-                                    <a href="#" class="google">
-                                        <i class="fa fa-google-plus fa-fw"></i>
-                                    </a>
-                                    <a href="#" class="twitter">
-                                        <i class="fa fa-twitter fa-fw"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end back panel -->
-                    </div>
-                    <!-- end card -->
-                </div>
-                <!-- end card-container -->
-            </div>
-            <!-- end col-sm-6 -->
-
-            <!-- Card 3 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="master-card-container">
-                    <div class="master-card">
-                        <div class="master-front">
-                            <div class="cover">
-                                <img src="public/images/rotating_card_thumb3.png" />
-                            </div>
-                            <div class="user">
-                                <img class="rounded-circle" src="public/images/Profile3.png" />
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Mo Hampton</h3>
-                                    <p class="profession">Developer-In-Training</p>
-
-                                    <p class="text-center">"I'm so grateful for this scholarship opportunity. I'm surrounding by many talented developers!"</p>
-                                </div>
-                                <div class="master-footer">
-                                    <div class="rating">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end front panel -->
-                        <div class="master-back">
-                            <div class="header">
-                                <h5 class="motto">"Cool catchy phrase or website link"</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Front End Favorites:</h4>
-                                    <p class="text-center">Web design, HTML5, CSS3 </p>
-
-                                    <div class="stats-container">
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>4</h4>
-                                            <p>
-                                                Projects
-                                            </p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4></h4>
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="master-footer">
-                                <div class="social-links text-center">
-                                    <a href="https://github.com/mohampton" target="_blank" class="github">
-                                        <i class="fa fa-github fa-fw"></i>
-                                    </a>
-                                    <a href="#" class="google">
-                                        <i class="fa fa-google-plus fa-fw"></i>
-                                    </a>
-                                    <a href="https://twitter.com/moxiehampton" target="_blank" class="twitter">
-                                        <i class="fa fa-twitter fa-fw"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end back panel -->
-                    </div>
-                    <!-- end card -->
-                </div>
-                <!-- end card-container -->
-            </div>
-            <!--end col-sm-6 -->
-
-            <!--<div class="col-sm-1"></div> -->
-
-
         </div>
-        <div class="cardDisplay">
-            <!-- end cardRow -->
-        </div>
-        <div class="cardDisplay2">
-        </div>
-        <div class="cardDisplay2">
-        </div>
-        <!-- end cardDisplay -->
     </div>
     <!-- end container-->
-
-    <!--   <footer class="pageFooter text-center">
-      <div class="contianer">
-        <span >All right reserved. Designed and developed by Grow with Google Front End Scholars 2018.</span>
-      </div>
-    </footer>
-  -->
-
-    <!-- <div class="yearbook-section">
-    <h2 class="yearbook-names">Rob Goelz</h2>
-    <ul>
-      <li><a href="https://codepen.io/RobGoelz/pen/WdgrLX">Animal Trading Card</a></li>
-      <li><a href="https://github.com/RobGoelz">GitHub Profile</a></li>
-    </ul>
-    <p class="yearbook-quote">
-      <a href="http://i.imgur.com/vaUAz.jpg.jpg">Litany Against Fear</a>
-    </p>
-
-    <h2 class="yearbook-names">Kathryn Patterson</h2>
-    <ul>
-        <li><a href="https://codepen.io/katfrog/pen/WdyxOx">Guinea Pig Trading Card</a></li>
-        <li><a href="https://katfrog.github.io/pixel-art-maker/">Pixel Art Maker</a></li>
-    </ul>
-    <p>It's the end of the world as we know it, and I feel fine. - REM</p>
-
-    <h2 class="yearbook-names">Sam Stokes</h2>
-    <ul>
-      <li><a href="https://codepen.io/Mithrawn/pen/xpjJYQ">Mockup to Article</a></li>
-      <li><a href="https://codepen.io/Mithrawn/pen/ypEwqX">Animal Trading Card</a></li>
-      <li><a href="www.google.com">Pixelart Maker</a></li>
-    </ul>
-    <p class="yearbook-quote">Dream the impossible dream -Somebody</p>
-
-  </div> -->
 
     <!-- ====================== MASTER MASTER SECTION ============= -->
     <!-- ====================== FOOTER ============= -->
@@ -390,7 +107,7 @@
                 <a href="about.html" title="About">About</a>
             </nav>
             &copy; 2018 Udacity: Grow with Google Front End Scholars </a>
-
+    
         </div>
     </footer>
     <!-- ====================== END FOOTER ============= -->
@@ -398,8 +115,8 @@
 
     <!-- ====================== MASTER MASTER SECTION ============= -->
     <!-- ======== jQuery first, then Popper.js, then Bootstrap JS | BOOTSTRAP AND PROJECT SCRIPTS AT THE FOOTER ========= -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <!-- Non-slimed version. Slimmed version doesn't have AJAX -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -407,94 +124,10 @@
     <script src="public/scripts/classProject.js"></script>
     <!-- ================= INCLUDING OF SCRIPT FILES END HERE =====================  -->
     <!-- ====================== END MASTER SECTION ============= -->
-
-
-
+	
     <!-- ======== PAGE SPECIFIC JAVASCRIPT ========= -->
-    <script type="text/javascript">
-        $().ready(function () {
-            $('[rel="tooltip"]').tooltip();
-
-        });
-
-        function rotateCard(btn) {
-            var $card = $(btn).closest('.card-container');
-            console.log($card);
-            if ($card.hasClass('hover')) {
-                $card.removeClass('hover');
-            } else {
-                $card.addClass('hover');
-            }
-        }
-
-        //function repeatCard() {
-        for (var i = 1; i < 4; i++) {
-            $(".cardDisplay").append('<div class="row" id="repeatCards"></div>');
-            for (var i = 0; i < 3; i++) {
-                $("#repeatCards").append('<div class="col-md-4 col-sm-6">' +
-                    '<div class="card-container"><div class="card"><div class="front"><div class="cover">' +
-                    '</div><div class="user">' +
-                    '<img class="img-circle" src="public/images/studentProfile.png" /></div>' +
-                    '<div class="content"><div class="main"><h3 class="name">Student Name</h3>' +
-                    '<p class="profession">Current or Future Profession</p><p class="text-center">"Udacity/Google Student Impact Statement"</p>' +
-                    '</div><div class="footer"><div class="rating"></div></div></div></div>' +
-                    '<div class="back"><div class="header"><h5 class="motto">"Cool catchy phrase or website link"</h5>' +
-                    '</div><div class="content"><div class="main">' +
-                    '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
-                    '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
-                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' +
-                    '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
-                    '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
-                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>'
-                );
-            }
-        }
-
-        for (var i = 1; i < 4; i++) {
-            $(".cardDisplay2").append('<div class="row" id="repeatCards"></div>');
-            for (var i = 0; i < 3; i++) {
-                $("#repeatCards").append('<div class="col-md-4 col-sm-6">' +
-                    '<div class="card-container"><div class="card"><div class="front"><div class="cover">' +
-                    '</div><div class="user">' +
-                    '<img class="img-circle" src="public/images/studentProfile.png" /></div>' +
-                    '<div class="content"><div class="main"><h3 class="name">Student Name</h3>' +
-                    '<p class="profession">Current or Future Profession</p><p class="text-center">"Udacity/Google Student Impact Statement"</p>' +
-                    '</div><div class="footer"><div class="rating"></div></div></div></div>' +
-                    '<div class="back"><div class="header"><h5 class="motto">"Cool catchy phrase or website link"</h5>' +
-                    '</div><div class="content"><div class="main">' +
-                    '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
-                    '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
-                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' +
-                    '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
-                    '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
-                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>'
-                );
-            }
-        }
-
-        for (var i = 1; i < 4; i++) {
-            $(".cardDisplay3").append('<div class="row" id="repeatCards"></div>');
-            for (var i = 0; i < 3; i++) {
-                $("#repeatCards").append('<div class="col-md-4 col-sm-6">' +
-                    '<div class="card-container"><div class="card"><div class="front"><div class="cover">' +
-                    '</div><div class="user">' +
-                    '<img class="img-circle" src="public/images/studentProfile.png" /></div>' +
-                    '<div class="content"><div class="main"><h3 class="name">Student Name</h3>' +
-                    '<p class="profession">Current or Future Profession</p><p class="text-center">"Udacity/Google Student Impact Statement"</p>' +
-                    '</div><div class="footer"><div class="rating"></div></div></div></div>' +
-                    '<div class="back"><div class="header"><h5 class="motto">"Cool catchy phrase or website link"</h5>' +
-                    '</div><div class="content"><div class="main">' +
-                    '<h4 class="text-center">Front End Favorites:</h4><p class="text-center">HTML5, CSS3, and JavaScript! </p>' +
-                    '<div class="stats-container"><div class="stats"><h4></h4><p></p></div><div class="stats"><h4>4</h4>' +
-                    '<p>Projects</p></div><div class="stats"><h4></h4><p></p></div></div></div></div>' +
-                    '<div class="footer"><div class="social-links text-center"><a href="#" target="_blank" class="github">' +
-                    '<i class="fa fa-github fa-fw"></i></a><a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>' +
-                    '<a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a></div></div></div></div></div></div>'
-                );
-            }
-        }
-        //}
-    </script>
+    <!-- Yearbook JS file -->
+    <script src="public\scripts\yearbook.js"></script>
     <!-- ===================== END PAGE SPECIFIC JAVASCRIPT ========= -->
 </body>
 
