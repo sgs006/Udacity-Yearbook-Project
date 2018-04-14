@@ -20,7 +20,7 @@ function resourceData(data, tabletop) {
 			data[i].Resource +
 			'</td>' +
 			'<td class="text">' +
-			'<span class="fa-stack fa-2x"><i class="fa fa-usd fa-stack-1x"></i><i class="fa fa-circle-thin fa-stack-2x"' + ((data[i].Free === 1) ? 'style="color:red"' : 'style="color:inherit"') + '></i></span>' +
+			'<span class="fa-stack fa-2x"><i class="fa fa-usd fa-stack-1x"></i><i class="fa fa-circle-thin fa-stack-2x"' + ((data[i].Free == 0) ? 'style="color:red"' : 'style="color:inherit"') + '></i></span>' +
 			'</td>' +
 			'<td class="text" id = "' + data[i].Type + '">' +
 			data[i].Type +
