@@ -1,6 +1,6 @@
 /*============== GENERAL SYTLES ===================*/
 
-.master-button {
+.button {
     background: #00b3e4;
     width: 60%;
     padding: 30px;
@@ -19,7 +19,7 @@ button:hover {
     opacity: .8;
 }
 
-.master-section-head {
+.section-head {
     height: 30vh;
     width: 100%;
     display: flex;
@@ -29,22 +29,22 @@ button:hover {
     text-align: center;
 }
 
-.master-section-head h1 {
+.section-head h1 {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-.master-section-head h4 {
+.section-head h4 {
     text-transform: uppercase;
 }
 
 /*====================== BACKGROUND GRADIENTS ========================*/
 
-.master-bluegreen-gradient {
+.bluegreen-gradient {
     background: linear-gradient(275deg, #00B3E4 0%, #31C5BD 100%);
 }
 
-.master-purple-gradient {
+.purple-gradient {
     background: linear-gradient(275deg, #A97ECD 0%, #D89BE3 100%);
 }
 
@@ -52,7 +52,7 @@ button:hover {
 
 /*========= WELCOME INTROCUTION ==========*/
 
-.master-intro {
+.intro {
     height: 60vh;
     width: 100%;
     background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
@@ -64,11 +64,11 @@ button:hover {
     margin: 0;
 }
 
-.master-intro h1 {
+.intro h1 {
     font-weight: 300;
 }
 
-.master-intro h3 {
+.intro h3 {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
@@ -77,7 +77,7 @@ button:hover {
 
 /*=================== BEGIN YEARBOOK SECTION =======================*/
 
-.master-section {
+.section {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -89,7 +89,7 @@ button:hover {
     padding-right: 30px;
 }
 
-.master-main p {
+.main p {
     text-align: center;
     max-width: 750px;
     margin: 5%;
@@ -108,7 +108,7 @@ button:hover {
     margin-bottom: 20px;
 }
 
-.master-rss-grid {
+.rss-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -116,7 +116,7 @@ button:hover {
     margin-bottom: 20px;
 }
 
-.master-main-thumb {
+.main-thumb {
     width: 165px;
     height: 200px;
     margin: 20px;
@@ -127,13 +127,13 @@ button:hover {
     border: 2px solid #eee;
 }
 
-.master-main-thumb:hover {
+.main-thumb:hover {
     transform: scale(1.05);
 }
 
 /*============== YEARBOOK CLOSE ==============*/
 
-.master-rss-thumb {
+.rss-thumb {
     width: 200px;
     height: 175px;
     margin: 20px;
@@ -148,32 +148,32 @@ button:hover {
 /*.rss-img:hover {
 }*/
 
-.master-rss-content {
+.rss-content {
     margin-top: 190px;
 }
 
-.master-rss-content {
+.rss-content {
     margin-left: 5px;
 }
 
-.master-rss-content h3{
+.rss-content h3{
     text-align: center;
 }
 
-.master-rss-content p {
+.rss-content p {
     font-size: 12px;
     margin-top: 10px;
     margin-left: 5px;
 }
 
-.master-art--columns div {
+.art--columns div {
     margin: 10px 0px 10px 0px;
 }
 
-.master-art--columns-content h3 {
+.art--columns-content h3 {
     margin-top: 10%;
 }
 
-.master-art--columns p {
+.art--columns p {
     width: 90%;
 }
