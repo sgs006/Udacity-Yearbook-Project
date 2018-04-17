@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+    <!-- ====================== MASTER SECTION ============= -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -21,7 +21,7 @@
     <meta property="og:title" content="Udacity Community Yearbook. Grow with Google Scholarship 2018." />
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="Udacity Community Yearbook" />
-    <meta property="og:image" content="/public/images/src.jpg" />
+    <meta property="og:image" content="/public/images/src.jpg">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Udacity Community Yearbook. Grow with Google Scholarship 2018." />
     <!-- ===================== END SOCIAL MEDIA META ========== -->
@@ -29,7 +29,7 @@
 
     <title>CSS Art | Udacity Community Yearbook</title>
 
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+    <!-- ====================== MASTER SECTION ============= -->
     <!-- ======== CSS STYLESHEETS INCLUDING BOOTSTRAP 4 (https://getbootstrap.com) AND OPEN SANS FONT FROM GOOGLE ========= -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
@@ -48,7 +48,7 @@
 </head>
 
 <body>
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+    <!-- ====================== MASTER SECTION ============= -->
     <!-- ========  SKIP NAVIGATION NEEDED FOR SCREEN READERS ============ -->
     <!-- SKIP NAV -->
     <div id="skiplink" class="sr-only sr-only-focusable">
@@ -58,33 +58,61 @@
     <!-- =========== END SKIP NAVIGATION NEEDED FOR SCREEN READERS ============ -->
 
     <!-- ========  WEBSITE NAVIGATION SECTION ============ -->
-    <nav id="MainNav" class="master-topnav">
-        <a href="index.html" title="Home">Home</a>
-        <a href="yearbook.html" title="YearBook">YearBook</a>
-        <a href="resources.html" title="Resources" title="">Resources</a>
-        <a href="cssart.html" title="CSS Art Projects">CSS Art Projects</a>
-        <a href="about.html" title="About">About</a>
-        <a href="javascript:void(0);" class="icon">&#9776;</a>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span>Menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" title="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="yearbook.html" title="Yearbook" class="nav-link">Yearbook</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" title="Resources" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cssart.html" title="CSS Art Projects" class="nav-link">CSS Art Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" title="About" class="nav-link">About</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- =========== END WEBSITE NAVIGATION PANE ============ -->
     <!-- ====================== END MASTER SECTION ============= -->
 
-
-
     <header>
-        <h1 class="master-pagetitle">CSS Art</h1>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h4 class="lead text-center">UDACITY: GROW WITH GOOGLE 2018</h4>
+                <h1 class="display-4 text-center">CSS Art Projects</h1>
+            </div>
+        </div>
     </header>
 
-    <!-- ========  EXAMPLE SECTION ============ -->
-    <!-- NOTES:
-                If using Bootstrap styling
-                Each section should be placed with a pair of DIVs with classes of container or container-fluid and row
-            -->
     <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                During the Udacity Grow with Google Front End Development Challenge Group, several of the students created student led projects.
+                One of these projects were the bi-weekly CSS Art Challenges. Erika Ritter led this and put the participants
+                through some interesting challenges that were voted on by the participants, begining with pure CSS challenges,
+                ultimately ending the challenges allowing SVG and HTML Canvas. They continue to make things and gather at
+                their
+                <a href="https://www.facebook.com/groups/1752972351391061/">Cascading Coders Facebook Group</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
         <div class="row" role="row">
             <div class="col">
                 <div class="challenge-title section">Challenge #1 - Taco Challenge.</div>
-
                 <div class="challenge-disc">Create CSS art that is taco-related. It can be one taco or many tacos! Maybe it’s hot sauce for a taco, taco
                     ingredients on a table, maybe it’s a hungry taco, a sad taco, maybe its shell is broken and it’s a ghost!
                     Maybe it’s a taco sitting on a couch watching tv. Let this topic be creative - you can take it as literal
@@ -94,58 +122,63 @@
                 </div>
                 <div class="demo">
                     <ul id="lightSlider">
-
                         <li data-thumb="public/images/cssart/tacosurprise.png">
                             <a href="https://codepen.io/Maeb/pen/ZvqYjr">
-                                <img src="public/images/cssart/tacosurprise.png" />
+                                <img src="public/images/cssart/tacosurprise.png" alt="">
                             </a>
-                            <div class="caption">by @maebee2319</div>
+                            <div class="caption">Taco Surprise by @maebee2319</div>
                         </li>
                         <li data-thumb="public/images/cssart/chocotaco.png">
-                            <a href="https://codepen.io/JavaScriptErika/full/OzYBor/">
-                                <img src="public/images/cssart/chocotaco.png" />
+                            <a href="https://codepen.io/JavaScriptErika/full/OzYBor">
+                                <img src="public/images/cssart/chocotaco.png" alt="">
                             </a>
+                            <div class="caption">Choco Taco by @erika_ritter</div>
                         </li>
                         <li data-thumb="public/images/cssart/thefriendlytaco.png">
                             <a href="https://codepen.io/MonicaJeanB/pen/goyyPg">
-                                <img src="public/images/cssart/thefriendlytaco.png" />
+                                <img src="public/images/cssart/thefriendlytaco.png" alt="">
                             </a>
+                            <div class="caption">The Friendly Taco by @monica.j.beauchampuv</div>
                         </li>
                         <li data-thumb="public/images/cssart/tacoboy.png">
                             <a href="https://codepen.io/quiwah/pen/LeoVwr">
-                                <img src="public/images/cssart/tacoboy.png" />
+                                <img src="public/images/cssart/tacoboy.png" alt="">
                             </a>
+                            <div class="caption">Taco Boy by @yuka.mullen</div>
                         </li>
                         <li data-thumb="public/images/cssart/manvsfood.png">
-                            <a href="https://codepen.io/bloom305/full/aEevdJ/">
-                                <img src="public/images/cssart/manvsfood.png" />
+                            <a href="https://codepen.io/bloom305/full/aEevdJ">
+                                <img src="public/images/cssart/manvsfood.png" alt="">
                             </a>
+                            <div class="caption">Man vs. Food by @rodrickbloomfield</div>
                         </li>
                         <li data-thumb="public/images/cssart/purecsstaco.png">
-                            <a href="https://codepen.io/markopolo91/full/QaReWg/">
-                                <img src="public/images/cssart/purecsstaco.png" />
+                            <a href="https://codepen.io/markopolo91/full/QaReWg">
+                                <img src="public/images/cssart/purecsstaco.png" alt="">
                             </a>
+                            <div class="caption">Pure CSS Taco by @markopolo91</div>
                         </li>
                         <li data-thumb="public/images/cssart/letstacoboutit.png">
                             <a href="https://codepen.io/AmberRoberts/pen/YYmgGe">
-                                <img src="public/images/cssart/letstacoboutit.png" />
+                                <img src="public/images/cssart/letstacoboutit.png" alt="">
                             </a>
+                            <div class="caption">Lets Taco Bout It by @amberrobertsvt</div>
                         </li>
                         <li data-thumb="public/images/cssart/miniontaco.png">
                             <a href="https://codepen.io/kdterrell125/pen/ZvgZpX">
-                                <img src="public/images/cssart/miniontaco.png" />
+                                <img src="public/images/cssart/miniontaco.png" alt="">
                             </a>
+                            <div class="caption">Minion Taco by @kdterrell125ze-i9</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/1-frankdip.png">
+                            <a href="https://codepen.io/LeafDragon/full/jYgoNZ">
+                                <img src="public/images/cssart/1-frankdip.png" alt="">
+                            </a>
+                            <div class="caption">CSS Taco by @fdip123496cq0</div>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
 
-
-    <div class="container-fluid">
-        <div class="row" role="row">
-            <div class="col">
                 <div class="challenge-title section">Challenge 2 - Video Game Inspired</div>
                 <div class="challenge-disc">Create an image or scene via CSS that is somehow related to your favorite video game character(s) and/or
                     element(s). It can be any style you’d like, or maybe you want to replicate a character and/or element
@@ -156,95 +189,250 @@
                     <ul id="lightSlider2">
                         <li data-thumb="public/images/cssart/2-navi.png">
                             <a href=https://codepen.io/Maeb/full/eVzKgq/>
-                            <img src="public/images/cssart/2-navi.png" />
+                            <img src="public/images/cssart/2-navi.png" alt="">
                             </a>
                             <div class="caption">Navi by maebee2319</div>
                             <li data-thumb="public/images/cssart/2-pokeball.png">
-                                <a href=https://codepen.io/markopolo91/full/MQJoVW/>
-                                <img src="public/images/cssart/2-pokeball.png" />
+                                <a href="https://codepen.io/markopolo91/full/MQJoVW/">
+                                    <img src="public/images/cssart/2-pokeball.png" alt="">
                                 </a>
                                 <div class="caption">Pure CSS Pokeball by markopolo91</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-yoshi.png">
                                 <a href=https://codepen.io/MonicaJeanB/full/bLBYOX/>
-                                <img src="public/images/cssart/2-yoshi.png" />
+                                <img src="public/images/cssart/2-yoshi.png" alt="">
                                 </a>
                                 <div class="caption">Yoshi by monica.j.beauchampuv</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-kirby.png">
                                 <a href=https://codepen.io/LeafDragon/full/WMeEVO/>
-                                <img src="public/images/cssart/2-kirby.png" />
+                                <img src="public/images/cssart/2-kirby.png" alt="">
                                 </a>
                                 <div class="caption">CSS Kirby Challenge by fdip123496cq0</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-ori.png">
                                 <a href=https://codepen.io/JavaScriptErika/full/WMeEwr/>
-                                <img src="public/images/cssart/2-ori.png" />
+                                <img src="public/images/cssart/2-ori.png" alt="">
                                 </a>
                                 <div class="caption">Ori and the Blind Forest by erika_ritter</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-redxiii.png">
                                 <a href=https://codepen.io/ksedar/full/JpWjXd/>
-                                <img src="public/images/cssart/2-redxiii.png" />
+                                <img src="public/images/cssart/2-redxiii.png" alt="">
                                 </a>
                                 <div class="caption">Red XIII by yuka.mullen</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-healthbars.png">
-                                <a href="https://codepen.io/ksedar/full/JpWjXd/">
-                                    <img src="public/images/cssart/2-healthbars.png">
+                                <a href="https://codepen.io/ksedar/full/JpWjXd">
+                                    <img src="public/images/cssart/2-healthbars.png" alt="">
                                 </a>
                                 <div class="caption">Health/Mana Bars by ksedar2408</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-megaman.png">
-                                <a href=https://codepen.io/OMGLexxie/full/ddvYRO/>
-                                <img src="public/images/cssart/2-megaman.png" />
+                                <a href="https://codepen.io/OMGLexxie/full/ddvYRO/">
+                                    <img src="public/images/cssart/2-megaman.png" alt="">
                                 </a>
                                 <div class="caption">Mega Man - Challenge #21 by slynn</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-duckhunt.png">
                                 <a href=https://codepen.io/FlyingDad/full/eVOPPo/>
-                                <img src="public/images/cssart/2-duckhunt.png" />
+                                <img src="public/images/cssart/2-duckhunt.png" alt="">
                                 </a>
                                 <div class="caption">Duck Hunt by QuattroDog</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-dreamshield.png">
                                 <a href=https://codepen.io/alexh921/full/rJVvwx/>
-                                <img src="public/images/cssart/2-dreamshield.png" />
+                                <img src="public/images/cssart/2-dreamshield.png" alt="">
                                 </a>
                                 <div class="caption">Goofy’s Dream Shield by eagle92190</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-mspacman.png">
                                 <a href=https://codepen.io/andranique/pen/JpWrZV>
-                                    <img src="public/images/cssart/2-mspacman.png" />
+                                    <img src="public/images/cssart/2-mspacman.png" alt="">
                                 </a>
                                 <div class="caption">Ms. Pacman by andranique</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-gameboy.png">
                                 <a href=https://codepen.io/amyyf/full/rJBypJ/>
-                                <img src="public/images/cssart/2-gameboy.png" />
+                                <img src="public/images/cssart/2-gameboy.png" alt="">
                                 </a>
                                 <div class="caption">CSS Only: GameBoy1 by amyf</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-sonic.png">
                                 <a href=https://codepen.io/remenapp/full/MQKOmr/>
-                                <img src="public/images/cssart/2-sonic.png" />
+                                <img src="public/images/cssart/2-sonic.png" alt="">
                                 </a>
                                 <div class="caption">Sonic! by remenapp</div>
                             </li>
                             <li data-thumb="public/images/cssart/2-gameboy2.png">
                                 <a href=https://codepen.io/tinyvial/full/zRzWpe/>
-                                <img src="public/images/cssart/2-gameboy2.png" />
+                                <img src="public/images/cssart/2-gameboy2.png" alt="">
                                 </a>
                                 <div class="caption">Original Game Boy (Lost in Pokemon) by judyg</div>
                             </li>
+                    </ul>
+                </div>
+
+                <div class="challenge-title section">Challenge 3 - Cartoon Inspiration</div>
+                <div class="challenge-disc">Create an image or scene via CSS that is related to your favorite childhood cartoon and/or Saturday morning
+                    character. It can be any style you’d like, or maybe you want to replicate a character and/or element
+                    exactly! It doesn’t have to be taken in the literal sense either. Incorporate this topic however abstractly
+                    or creatively you’d like - it just must capture the essence!</div>
+                <div class="demo">
+                    <ul id="lightSlider3">
+                        <li data-thumb="public/images/cssart/3-pika.png">
+                            <a href="https://codepen.io/LeafDragon/full/gvGovR">
+                                <img src="public/images/cssart/3-pika.png" alt="">
+                            </a>
+                            <div class="caption">CSS Cartoon/Anime Challenge ピカチュー by fdip123496cq0</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/3-mickey.png">
+                            <a href="https://codepen.io/gina812/full/oEoejR">
+                                <img src="public/images/cssart/3-mickey.png" alt="">
+                            </a>
+                            <div class="caption">Mickey by gina812</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/3-lumpy.png">
+                            <a href="https://codepen.io/MonicaJeanB/full/XZZrVv">
+                                <img src="public/images/cssart/3-lumpy.png" alt="">
+                            </a>
+                            <div class="caption">Lumpy Space Princess - Adventure Time by monica.j.beauchampuv</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/3-buttercup.png">
+                            <a href="https://codepen.io/lieberkde7rj/full/eVRjwX">
+                                <img src="public/images/cssart/3-buttercup.png" alt="">
+                            </a>
+                            <div class="caption">Buttercup from the Powerpuff Girls by lieberkde7rj</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/3-darwin.png">
+                            <a href="https://codepen.io/Maeb/full/QQQbOB">
+                                <img src="public/images/cssart/3-darwin.png" alt="">
+                            </a>
+                            <div class="caption">Darwin Watterson by maebee2319</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/3-kuriboh.png">
+                            <a href="https://codepen.io/markopolo91/full/YeewNM">
+                                <img src="public/images/cssart/3-kuriboh.png" alt="">
+                            </a>
+                            <div class="caption">Pure CSS Kuriboh by markopolo91</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/3-fanplanet.png">
+                            <a href="https://codepen.io/remenapp/full/qxpbVG">
+                                <img src="public/images/cssart/3-fanplanet.png" alt="">
+                            </a>
+                            <div class="caption">Fantastic Planet by remenapp</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/3-mickey2.png">
+                            <a href="https://codepen.io/donimathis/full/MQpVOR">
+                                <img src="public/images/cssart/3-mickey2.png" alt="">
+                            </a>
+                            <div class="caption">Mickey by donimathis</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/3-dexter.png">
+                            <a href="https://codepen.io/brendanpettis/full/aqGeJJ">
+                                <img src="public/images/cssart/3-dexter.png" alt="">
+                            </a>
+                            <div class="caption">Dexter’s Laboratory by codemetheus</div>
+                        </li>
+                        <li data-thumb="public/images/cssart/3-totoro.png">
+                            <a href="https://codepen.io/alexh921/full/parPPj">
+                                <img src="public/images/cssart/3-totoro.png" alt="">
+                            </a>
+                            <div class="caption">Totoro by eagle92190</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="challenge-title section">Challenge 4 - DINOSAURS!!! </div>
+                <div class="challenge-disc">Create an image or scene via CSS that is related to dinosaurs. It can be any style you’d like, or maybe you
+                    want to replicate a dinosaur and/or element exactly! It doesn’t have to be taken in the literal sense
+                    either. Incorporate this topic however abstractly or creatively you’d like - it just must capture the
+                    essence!
+                </div>
+                <div class="demo">
+                    <ul id="lightSlider4">
+                        <li data-thumb="public/images/cssart/4-Mibeauchamp.png">
+                            <a href=https://codepen.io/MonicaJeanB/full/vRELJE/>
+                            <img src="public/images/cssart/4-Mibeauchamp.png">
+                            </a>
+                            <div class="caption">Clever Girl by MJ Beauchampuv</div>
+                            <li data-thumb="public/images/cssart/4-Danielle.png">
+                                <a href=https://codepen.io/lieberkde7rj/full/dmyKOv/>
+                                <img src="public/images/cssart/4-Danielle.png">
+                                </a>
+                                <div class="caption">T-Rex by lieberkde7rj</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/4-Julia.png">
+                                <a href=https://codepen.io/juliach/full/eVqzpV/>
+                                <img src="public/images/cssart/4-Julia.png">
+                                </a>
+                                <div class="caption"> CSS Triceratops by Julia Chistiakova</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/4-Morgen.png">
+                                <a href=https://codepen.io/Maeb/full/EExoGq/>
+                                <img src="public/images/cssart/4-Morgen.png">
+                                </a>
+                                <div class="caption">Ankylosaurus by maebee2319</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/4-FrankDip.png">
+                                <a href=https://codepen.io/LeafDragon/full/OQYWQO/>
+                                <img src="public/images/cssart/4-FrankDip.png">
+                                </a>
+                                <div class="caption">CSS Dinosaur Challenge by fdip123496cq0</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/4-Yuka.png">
+                                <a href=https://codepen.io/quiwah/full/RQXLLq/>
+                                <img src="public/images/cssart/4-Yuka.png">
+                                </a>
+                                <div class="caption">Popsaurus by yuka.mullen</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/4-Mark.png">
+                                <a href="https://codepen.io/markopolo91/full/YaKGyw">
+                                    <img src="public/images/cssart/4-Mark.png">
+                                </a>
+                                <div class="caption">SVG/CSS Baby Dinosaur by markopolo91</div>
+                            </li>
+                            <li data-thumb="public/images/cssart/4-Erica.png">
+                                <a href=https://codepen.io/JavaScriptErika/full/OvPdyj/>
+                                <img src="public/images/cssart/4-Erica.png">
+                                </a>
+                                <div class="caption">SVG Dinosaur with Juice and Cookies by erika_ritter</div>
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="challenge-title section">Challenge 5 - UI Site element</div>
+                <div class="challenge-disc">Create a UI element via CSS/SVG - it can be your pick, anything from a loader, input field, toggle, menu,
+                    accordian, image carousal, button, etc. It can be any style you’d like! DO SOMETHING CREATIVE with it.
+                    What can you do to add in a special spark? What UX can you add to a form or button that’s creative and
+                    refreshing? Incorporate this topic however abstractly or creatively you’d like </div>
+                <div class="demo">
+                    <ul id="lightSlider5">
+                        <li data-thumb "public/images/cssart/5-FrankDip.png">
+                            <a href="https://codepen.io/LeafDragon/full/yKNvWW">
+                                <img src="public/images/cssart/5-FrankDip.png" alt="">
+                            </a>
+                            <div class="caption">CSS SVG UI Site Element Challenge by fdip123496cq0 </div>
+                        </li>
+                        <li data-thumb "public/images/cssart/5-Morgen.png">
+                            <a href="https://codepen.io/Maeb/full/OvgWEa">
+                                <img src="public/images/cssart/5-Morgen.png" alt="">
+                            </a>
+                            <div class="caption">MovieTime by maebee2319</div>
+                        </li>
+                        <li data-thumb "public/images/cssart/5-Yuka.png">
+                            <a href="https://codepen.io/quiwah/full/gexBma">
+                                <img src="public/images/cssart/5-Yuka.png" alt="">
+                            </a>
+                            <div class="caption">DayNight Switch by yuka.mullen</div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- =========== END EXAMPLE SECTION ============ -->
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+
+    <!-- ====================== MASTER SECTION ============= -->
     <!-- ====================== FOOTER ============= -->
     <footer>
         <div class="master-footer text-center">
@@ -260,11 +448,21 @@
         </div>
     </footer>
     <!-- ====================== END FOOTER ============= -->
+
+    <!-- ====================== RETURN TO TOP ============= -->
+    <!-- Return to Top -->
+    <div>
+        <a href="javascript:" id="return-to-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+    <!-- ====================== END RETURN TO TOP ============= -->
     <!-- ====================== END MASTER SECTION ============= -->
 
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+    <!-- ====================== MASTER SECTION ============= -->
     <!-- ======== jQuery first, then Popper.js, then Bootstrap JS | BOOTSTRAP AND PROJECT SCRIPTS AT THE FOOTER ========= -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- Non-slimed version. Slimmed version missing common used features -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -279,96 +477,11 @@
     <script src="public/lib/lightslider.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#lightSlider").lightSlider({
-                item: 3,
-                autoWidth: true,
-                slideMove: 1, // slidemove will be 1 if loop is true
-                slideMargin: 15,
-
-                // addClass: '',
-                // mode: "slide",
-                // useCSS: true,
-                // cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-                // easing: 'linear', //'for jquery animation',////
-                //
-                // speed: 400, //ms'
-                // auto: false,
-                // loop: false,
-                // slideEndAnimation: true,
-                // pause: 2000,
-                //
-                // keyPress: false,
-                // controls: true,
-                // prevHtml: '',
-                // nextHtml: '',
-                //
-                // rtl:false,
-                // adaptiveHeight:false,
-                //
-                // vertical:false,
-                // verticalHeight:600,
-                // vThumbWidth:100,
-                //
-                // thumbItem:10,
-                // pager: true,
-                // gallery: true,
-                // galleryMargin: 5,
-                // thumbMargin: 5,
-                // currentPagerPosition: 'middle',
-                //
-                // enableTouch:true,
-                // enableDrag:true,
-                // freeMove:true,
-                // swipeThreshold: 40,
-                //
-                // responsive : [],
-
-                onBeforeStart: function (el) {},
-
-                onSliderLoad: function (el) {
-                    var maxHeight = 0,
-                        container = $(el),
-                        children = container.children();
-
-                    children.each(function () {
-                        var childHeight = $(this).height();
-                        if (childHeight > maxHeight) {
-                            maxHeight = childHeight;
-                        }
-                    });
-                    container.height(maxHeight);
-                },
-                onBeforeSlide: function (el) {},
-                onAfterSlide: function (el) {},
-                onBeforeNextSlide: function (el) {},
-                onBeforePrevSlide: function (el) {}
-            });
-        });
-        $(document).ready(function () {
-            $("#lightSlider2").lightSlider({
-                item: 3,
-                slideMove: 1, // slidemove will be 1 if loop is true
-                slideMargin: 15,
-
-                onBeforeStart: function (el) {},
-                onSliderLoad: function (el) {
-                    var maxHeight = 0,
-                        container = $(el),
-                        children = container.children();
-
-                    children.each(function () {
-                        var childHeight = $(this).height();
-                        if (childHeight > maxHeight) {
-                            maxHeight = childHeight;
-                        }
-                    });
-                    container.height(maxHeight);
-                },
-                onBeforeSlide: function (el) {},
-                onAfterSlide: function (el) {},
-                onBeforeNextSlide: function (el) {},
-                onBeforePrevSlide: function (el) {}
-            });
+            $("#lightSlider").lightSlider({});
+            $("#lightSlider2").lightSlider({});
+            $("#lightSlider3").lightSlider({});
+            $("#lightSlider4").lightSlider({});
+            $("#lightSlider5").lightSlider({});
         });
     </script>
     <!-- ===================== END PAGE SPECIFIC JAVASCRIPT ========= -->
