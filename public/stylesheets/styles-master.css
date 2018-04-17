@@ -43,6 +43,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.jumbotron {
+    background: linear-gradient(90deg, #31C5BD, #A97ECD);
+    color: whitesmoke;
+}
+
 /***********************************************************************
 	STYLE GUIDE IMPLEMENTATION FOR FONTS FROM MO's ROTATING CARD CSS
 ************************************************************************/
