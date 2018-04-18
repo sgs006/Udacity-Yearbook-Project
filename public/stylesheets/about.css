@@ -32,12 +32,16 @@
     margin-bottom: 50px;
 }
 
-.fa {
+.fa-laptop,
+.fa-users,
+.fa-handshake-o {
     font-size: 75px;
     color: #1a53ff;
     transition: 2s;
 }
 
-.fa:hover {
+.fa-laptop:hover,
+.fa-users:hover,
+.fa-handshake-o:hover {
     transform: scale(1.5);
 }

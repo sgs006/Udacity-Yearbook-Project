@@ -6,27 +6,33 @@ $(document).ready(function () {
     //*************************************************************
     //	Navigation related
     //*************************************************************
-    $('.navbar-nav li').removeClass('active');
-    $('.navbar-nav li a').remove('span.sr-only');
-
     if (window.location.href.indexOf("index") > -1) {
-        $('a[href^=index]').addClass('active').append('<span class="sr-only">(current)</span>');
+        SetActiveNavMenu('a[href^=index]');
     }
 
     if (window.location.href.indexOf("yearbook") > -1) {
-        $('a[href^=yearbook]').addClass('active').append('<span class="sr-only">(current)</span>');
+        SetActiveNavMenu('a[href^=yearbook]');
     }
 
     if (window.location.href.indexOf("resources") > -1) {
-        $('a[href^=resources]').addClass('active').append('<span class="sr-only">(current)</span>');
+        SetActiveNavMenu('a[href^=resources]');
     }
 
     if (window.location.href.indexOf("cssart") > -1) {
-        $('a[href^=cssart]').addClass('active').append('<span class="sr-only">(current)</span>');
+        SetActiveNavMenu('a[href^=cssart]');
     }
 
     if (window.location.href.indexOf("about") > -1) {
-        $('a[href^=about]').addClass('active').append('<span class="sr-only">(current)</span>');
+        SetActiveNavMenu('a[href^=about]');
+    }
+
+    //*************************************************************
+    //	Sets Active Navigation Menu
+    //*************************************************************
+    function SetActiveNavMenu(navSelector) {
+        $('.navbar-nav li').removeClass('active');
+        $('.navbar-nav li a').remove('span.sr-only');
+        $(navSelector).addClass('active').append('<span class="sr-only">(current)</span>');
     }
 
     //*************************************************************
