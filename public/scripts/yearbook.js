@@ -72,11 +72,7 @@ function showStudentCards(arr) {
          * @desc Github URL for each student
          * Conditional incase of full URL or just name
          */
-        var githubName =
-    		  element.Github_ID.includes("https") ?
-              element.Github_ID.slice(element.Github_ID.lastIndexOf("/") + 1) :
-              element.Github_ID;
-        var githubURL = `https://api.github.com/users/${githubName}`;
+        var githubURL = `https://api.github.com/users/${element.Github_ID}`;
         $.getJSON(githubURL).done(function(data) {
           let avatar = data.avatar_url;
           makeCard(element, avatar);
