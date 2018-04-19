@@ -4,14 +4,14 @@
  * @author robt9095wssas
  * @author rskovronuc6g
  * @desc Calls the JSON file from Google Docs to make the cards
- * @version 1.4
+ * @version 1.5
  */
 
 /** ***************************************
  * DOM selectors
  ******************************************/
-const $cardRow = $("#cardRow");
-const searchState = $('#search-state');
+var cardRow = $("#cardRow");
+var searchState = $('#search-state');
 
 /** ***************************************
  * Model
@@ -39,7 +39,7 @@ $(function () {
 	if (input !== '') {
 		runSearch(input);
 		searchState.append(loader);
-		$cardRow.html('');
+		cardRow.html('');
 	} else {
 		alert('Please enter a search value');
 		exit;
@@ -65,16 +65,16 @@ function showStudentCards(arr) {
     arr.forEach(function(element) {
       /** @desc Conditional incase empty field for GIthub */
       if (element.Github_ID === "") {
-        let defaultAvatar = "public/images/studentProfile.png";
+        var defaultAvatar = "public/images/studentProfile.png";
         makeCard(element, defaultAvatar);
       } else {
         /**
          * @desc Github URL for each student
          * Conditional incase of full URL or just name
          */
-        var githubURL = `https://api.github.com/users/${element.Github_ID}`;
+        var githubURL = "https://api.github.com/users/" + element.Github_ID;
         $.getJSON(githubURL).done(function(data) {
-          let avatar = data.avatar_url;
+          var avatar = data.avatar_url;
           makeCard(element, avatar);
         });
       }
@@ -115,19 +115,20 @@ function runSearch(input) {
 function makeCard(e, avatar) {
   /** @desc Checks for full URL or just ID */
   var githubURL =
-    e.Github_ID.includes("https") ?
+    e.Github_ID.slice(0, 5) === "https" ?
       e.Github_ID :
-      `https://github.com/${e.Github_ID}`;
+      "https://github.com/" + e.Github_ID;
   /** @desc Checks for numbers or Name */
   var googlePlusURL =
     e["Google+_ID"][0] < 65 ?
-      `https://plus.google.com/u/0/${e["Google+_ID"]}` :
-      `https://plus.google.com/u/0/+${e["Google+_ID"]}`;
+      "https://plus.google.com/u/0/" + e["Google+_ID"] :
+      "https://plus.google.com/u/0/"+ + e["Google+_ID"];
   /** @desc Converts twitter handle to full URL or just empty strings */
   var twitterURL =
     e.Twitter_ID ?
-      `https://twitter.com/${e.Twitter_ID}` :
+      "https://twitter.com/" + e.Twitter_ID :
       "";
+
   var $divCols = $(
     '<div class="col-md-4 col-sm-6">' +
       '<div class="card-container">' +
@@ -183,5 +184,5 @@ function makeCard(e, avatar) {
     '</div>'
   );
 
-  $cardRow.append($divCols);
+  cardRow.append($divCols);
 }
