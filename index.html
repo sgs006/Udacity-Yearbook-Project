@@ -2,19 +2,19 @@
 <html>
 
 <head>
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+    <!-- ====================== MASTER SECTION ============= -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- ========= WEBSITES META INFORMATION INCLUDING STATUS BAR COLOR FOR MOBILE BROWSERS ========== -->
     <meta name="description" content="Grow with Google Scholarship 2018 - Udacity Community Yearbook. Yearbook project for 2018 GwG Cohort.">
     <meta name="msapplication-TileColor" content="#00B3E4">
     <meta name="theme-color" content="#00B3E4">
     <meta name="apple-mobile-web-app-status-bar-style" content="#00B3E4" />
     <!-- ===================== END WEBSITE META INFORMATION ========== -->
-    
+
     <!-- ============= SOCIAL MEDIA META PROPERTIES ================== -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -28,16 +28,16 @@
     <!-- ====================== END MASTER SECTION ============= -->
 
     <title>Home Page | Udacity Community Yearbook</title>
-    
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+
+    <!-- ====================== MASTER SECTION ============= -->
     <!-- ======== CSS STYLESHEETS INCLUDING BOOTSTRAP 4 (https://getbootstrap.com) AND OPEN SANS FONT FROM GOOGLE ========= -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700">
     <link rel="stylesheet" href="public/stylesheets/reboot.css">
-    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="public/stylesheets/styles-master.css">
     <!-- ===================== END CSS STYLESHEETS ========== -->
     <!-- ====================== END MASTER SECTION ============= -->
 
@@ -47,7 +47,7 @@
 </head>
 
 <body>
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+    <!-- ====================== MASTER SECTION ============= -->
     <!-- ========  SKIP NAVIGATION NEEDED FOR SCREEN READERS ============ -->
     <!-- SKIP NAV -->
     <div id="skiplink" class="sr-only sr-only-focusable">
@@ -57,13 +57,33 @@
     <!-- =========== END SKIP NAVIGATION NEEDED FOR SCREEN READERS ============ -->
 
     <!-- ========  WEBSITE NAVIGATION SECTION ============ -->
-    <nav id="MainNav" class="topnav">
-        <a href="index.html" title="Home">Home</a>
-        <a href="yearbook.html" title="YearBook">YearBook</a>
-        <a href="#rss-main" title="Resources" title="">Resources</a>
-        <a href="cssart.html" title="CSS Art Projects">CSS Art Projects</a>
-        <a href="about.html" title="About">About</a>
-        <a href="javascript:void(0);" class="icon">&#9776;</a>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span>Menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html" title="Home">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="yearbook.html" title="Yearbook" class="nav-link">Yearbook</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" title="Resources" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cssart.html" title="CSS Art Projects" class="nav-link">CSS Art Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" title="About" class="nav-link">About</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- =========== END WEBSITE NAVIGATION PANE ============ -->
     <!-- ====================== END MASTER SECTION ============= -->
@@ -81,45 +101,46 @@
     </div>
     <!-- ================ END WEBSITE INTRODUCTION SECTION =========== -->
 
-
-
     <!-- ================== INTRODUCTION SECTION GRID 3X3 ========================= -->
     <div id="MainContent" class="section main">
-        <p>This site was created by and dedicated to the 15,000 students who participated in the Grow with Google Scholarship 
-           program through Udacity. Over a three month period, students from all across the United States, and from all walks of life learned, struggled, and
-           grew together. We invite you to share in the celebration of our commitment to learning as we all move on to new and exciting
-           opportunities made possible by dedication, hard work, and a willingness to learn.
+        <p>
+            This site was created by and dedicated to the 15,000 students who participated in the
+            <a class="main-a" href="https://blog.udacity.com/2017/10/udacity-google-announce-50000-new-scholarships.html" target="_blank">
+                <!-- alternative link:  https://www.udacity.com/grow-with-google -->Grow with Google Scholarship</a> program through Udacity. Over a three month period, students from all across
+            the United States, and from all walks of life learned, struggled, and grew together. We invite you to share in
+            the celebration of our commitment to learning as we all move on to new and exciting opportunities made possible
+            by dedication, hard work, and a willingness to learn.
         </p>
         <div class="main-grid">
-            <a class="main-thumb" href="#" title="Men">
+            <a class="main-thumb" href="yearbook.html" title="Men">
                 <img class="" src="https://randomuser.me/api/portraits/men/52.jpg" width="100%" alt="Picture of Men">
             </a>
-            <a class="main-thumb" href="#" title="Men">
+            <a class="main-thumb" href="yearbook.html" title="Men">
                 <img class="" src="https://randomuser.me/api/portraits/men/62.jpg" width="100%" alt="Picture of Men">
             </a>
-            <a class="main-thumb" href="#" title="Women">
+            <a class="main-thumb" href="yearbook.html" title="Women">
                 <img class="" src="https://randomuser.me/api/portraits/women/37.jpg" width="100%" alt="Picture of Women">
             </a>
-            <a class="main-thumb" href="#" title="Women">
+            <a class="main-thumb" href="yearbook.html" title="Women">
                 <img class="" src="https://randomuser.me/api/portraits/women/34.jpg" width="100%" alt="Picture of Women">
             </a>
-            <a class="main-thumb" href="#" title="Men">
+            <a class="main-thumb" href="yearbook.html" title="Men">
                 <img class="" src="https://randomuser.me/api/portraits/men/72.jpg" width="100%" alt="Picture of Men">
             </a>
-            <a class="main-thumb" href="#" title="Women">
+            <a class="main-thumb" href="yearbook.html" title="Women">
                 <img class="" src="https://randomuser.me/api/portraits/women/32.jpg" width="100%" alt="Picture of Women">
             </a>
-            <a class="main-thumb" href="#" title="Men">
+            <a class="main-thumb" href="yearbook.html" title="Men">
                 <img class="" src="https://randomuser.me/api/portraits/men/52.jpg" width="100%" alt="Picture of Men">
             </a>
-            <a class="main-thumb" href="#" title="Women">
+            <a class="main-thumb" href="yearbook.html" title="Women">
                 <img class="" src="https://randomuser.me/api/portraits/women/34.jpg" width="100%" alt="Picture of Women">
             </a>
-            <a class="main-thumb" href="#" title="Men">
+            <a class="main-thumb" href="yearbook.html" title="Men">
                 <img class="" src="https://randomuser.me/api/portraits/men/22.jpg" width="100%" alt="Picture of Men">
             </a>
         </div>
-        <a class="button" href="#">view full class list</a>
+        <a class="button" href="yearbook.html">view full class list</a>
     </div>
     <!-- ====================== END INTRODUCTION SECTION GRID ================================== -->
 
@@ -130,7 +151,7 @@
         <div class="row" role="row">
             <div class="section-head bluegreen-gradient">
                 <h1>Resources</h1>
-                <h4>websites that has helped us along the way</h4>
+                <h4>websites that have helped us along the way</h4>
             </div>
         </div>
     </div>
@@ -507,19 +528,41 @@
 
     <!-- ====================== END YEARBOOK PROFILE CARD DESIGN BY MO ============= -->
 
-    
 
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+
+
+
+    <!-- ====================== MASTER SECTION ============= -->
     <!-- ====================== FOOTER ============= -->
-    <!-- FOOTER CONTENT HERE -->
+    <footer>
+        <div class="master-footer text-center">
+            <nav>
+                <a href="index.html" title="Home">Home |</a>
+                <a href="yearbook.html" title="Yearbook">Yearbook | </a>
+                <a href="resources.html" title="Resources">Resources |</a>
+                <a href="cssart.html" title="CSS Art Projects">CSS Art Projects |</a>
+                <a href="about.html" title="About">About</a>
+            </nav>
+            &copy; 2018 Udacity: Grow with Google Front End Scholars </a>
+
+        </div>
+    </footer>
     <!-- ====================== END FOOTER ============= -->
+
+    <!-- ====================== RETURN TO TOP ============= -->
+    <!-- Return to Top -->
+    <div>
+        <a href="javascript:" id="return-to-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+    <!-- ====================== END RETURN TO TOP ============= -->
     <!-- ====================== END MASTER SECTION ============= -->
 
-
-
-    <!-- ====================== MASTER MASTER SECTION ============= -->
+    <!-- ====================== MASTER SECTION ============= -->
     <!-- ======== jQuery first, then Popper.js, then Bootstrap JS | BOOTSTRAP AND PROJECT SCRIPTS AT THE FOOTER ========= -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- Non-slimed version. Slimmed version missing common used features -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

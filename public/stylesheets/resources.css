@@ -1,0 +1,157 @@
+/*============== GENERAL SYTLES ===================*/
+
+.button {
+  background: #00b3e4;
+  width: 60%;
+  padding: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  font-weight: bold;
+  letter-spacing: 1;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+.section-head {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.section-head h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section-head h4 {
+  text-transform: uppercase;
+}
+
+/*====================== RESOURCE PAGE NAVBAR GRADIENT ========================*/
+
+.resnav {
+  overflow: hidden;
+  background: linear-gradient(275deg, #8A2BE2 -20%, #00B3E4 100%);
+}
+
+/*====================== END RESOURCE PAGE NAVBAR GRADIENT ====================*/
+
+/*====================== BACKGROUND GRADIENTS ========================*/
+
+.bluegreen-gradient {
+  background: linear-gradient(275deg, #00B3E4 0%, #31C5BD 100%);
+}
+
+.purple-gradient {
+  background: linear-gradient(275deg, #A97ECD 0%, #D89BE3 100%);
+}
+
+/*====================== END BACKGROUND GRADIENTS ====================*/
+
+/*========= WELCOME INTRODUCTION ==========*/
+
+.intro {
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient(275deg, #8A2BE2 -20%, #00B3E4 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.intro h1 {
+  font-weight: 300;
+}
+
+.intro h3 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/*  Resource List CSS */
+
+table {
+  width: 100%;
+}
+
+th {
+  background: rgb(66, 140, 252);
+  font-weight: bold;
+  color: black;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+  margin: 1px;
+  background: rgb(255, 249, 227);
+}
+
+/*========== END OF RESOURCE LIST CSS ==========*/
+
+/*======================= END INTRODUCTION SECTION ==================*/
+=======
+/*========= JUMP TO BUTTONS ==========*/
+
+@media (min-width: 768px) {
+  .resources-jumpTo {
+    max-width: 504px;
+  }
+}
+
+@media (min-width: 992px) {
+  .resources-jumpTo {
+    max-width: 672px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .resources-jumpTo {
+    max-width: 792px;
+  }
+}
+
+.resources-buttons {
+  color: black;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    margin-left: 1.5rem;
+    margin-top: -0.5rem;
+  }
+}
+
+/*======================= END JUMP TO BUTTONS SECTION ==================*/
+
+/*=============== FOOTER STYLES ================*/
+
+/*footer {
+	background:#ACA5CC;
+	color:white;
+	height: 10vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+footer p {
+	color:white;
+	text-align:center;
+}*/
+
+/*=============== END FOOTER STYLE =====================*/

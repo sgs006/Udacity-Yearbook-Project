@@ -95,6 +95,11 @@ button:hover {
     margin: 5%;
 }
 
+.main-a {
+  border-bottom: 1px solid #91daee;
+  /* link style from https://www.udacity.com/grow-with-google */
+}
+
 .main-grid {
     display: flex;
     flex-wrap: wrap;
@@ -172,20 +177,3 @@ button:hover {
 .art--columns p {
     width: 90%;
 }
-
-/*=============== FOOTER STYLES ================*/
-
-/*footer {
-	background:#ACA5CC;
-	color:white;
-	height: 10vh;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-}
-footer p {
-	color:white;
-	text-align:center;
-}*/
-
-/*=============== END FOOTER STYLE =====================*/
