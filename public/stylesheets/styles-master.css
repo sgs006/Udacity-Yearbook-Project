@@ -24,21 +24,52 @@ a:hover {
     color: whitesmoke;
 }
 
-.master-footer {
+/***********************************************************************
+	START OF FOOTER STYLES
+************************************************************************/
+
+#footer {
+    padding-bottom: .25em !important;
+    background: linear-gradient(275deg, #AA7ECD 0%, #D89BE3 100%);
+    color: #fff;
+    font-weight: 700;
+}
+
+#footer p {
+    color: #fff;
+    font-weight: 700;
+}
+
+#footer nav li:after {
     position: relative;
-    bottom: 0;
+    content: '|';
+    left: .5em;
+}
+
+#footer nav li:last-child:after {
+    content: '';
+}
+
+@media screen and (max-width: 400px) {
+    #footer nav {
+        display: none;
+    }
+    #footer {
+        padding-bottom: .1em !important;
+    }
+}
+
+.master-footer {
     padding-top: 10px;
     width: 100%;
-    min-height: 60px;
+    min-height: 50px;
     line-height: 20px;
-    color: white;
-    background: linear-gradient(275deg, #AA7ECD 0%, #D89BE3 100%);
     font-size: 14px;
     font-weight: 700;
 }
 
 .master-footer a {
-    color: white;
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
 }
@@ -49,8 +80,13 @@ a:hover {
 }
 
 /***********************************************************************
+	END OF FOOTER STYLES
+************************************************************************/
+
+/***********************************************************************
 	START OF NAVBAR STYLES
 ************************************************************************/
+
 .navbar {
     background: linear-gradient(275deg, #AA7ECD 0%, #02CCBA 100%);
     overflow: hidden;
@@ -163,6 +199,7 @@ Leaving for archive purposes - JP
     START OF RETURN TO TOP STYLES
     SEE: https: //codepen.io/rdallaire/pen/apoyx
 ************************************************************************/
+
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -214,6 +251,7 @@ Leaving for archive purposes - JP
 /***********************************************************************
 	STYLE GUIDE IMPLEMENTATION FOR FONTS FROM MO's ROTATING CARD CSS
 ************************************************************************/
+
 h1 {
     font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Ubuntu", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 40px;
