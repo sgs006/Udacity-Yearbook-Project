@@ -31,10 +31,8 @@
 
     <!-- ====================== MASTER SECTION ============= -->
     <!-- ======== CSS STYLESHEETS INCLUDING BOOTSTRAP 4 (https://getbootstrap.com) AND OPEN SANS FONT FROM GOOGLE ========= -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700">
     <link rel="stylesheet" href="public/stylesheets/reboot.css">
     <link rel="stylesheet" href="public/stylesheets/styles-master.css">
@@ -58,8 +56,7 @@
 
     <!-- ========  WEBSITE NAVIGATION SECTION ============ -->
     <nav class="navbar navbar-expand-sm navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span>Menu</span>
         </button>
 
@@ -107,9 +104,14 @@
         <div class="row">
             <div class="col-md-10 offset-1">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, modi. Quasi illum voluptatem delectus molestiae, incidunt
-                    reiciendis. Rem, atque adipisci praesentium consequuntur at eligendi, eum repellendus cumque autem minus
-                    consequatur.
+                    Towards the end of the
+                    <a href="https://www.udacity.com/grow-with-google" title="Grow With Google Challenge" target="_blank">Grow With Google Challenge</a>, we’ve realized we’ve been studying together for three months, exchanging countless advises, good morning/good night wishes, learning not only about our professional experiences but also sharing details of our personal lives.
+                </p>
+                <p>
+                    So, we decided it would be nice to “see” each other on a map. To see how fellow scholars are located across the country as we work together in the same classroom.
+                </p>
+                <p>
+                    Now, we can see Grow with Google scholars all across USA!
                 </p>
             </div>
         </div>
@@ -117,7 +119,7 @@
     <div class="container-fluid">
         <div class="row" role="row">
             <div class="col">
-                <p class="text-center">Mouse over a marker to see the name.</p>
+                <p class="text-center"><strong>Mouse over a marker to see the name.</strong></p>
                 <div id="map"></div>
             </div>
         </div>
@@ -171,19 +173,15 @@
     <!-- ====================== MASTER SECTION ============= -->
     <!-- ======== jQuery first, then Popper.js, then Bootstrap JS | BOOTSTRAP AND PROJECT SCRIPTS AT THE FOOTER ========= -->
     <!-- Non-slimed version. Slimmed version missing common used features -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="public/scripts/classProject.js"></script>
     <!-- ================= INCLUDING OF SCRIPT FILES END HERE =====================  -->
     <!-- ====================== END MASTER SECTION ============= -->
 
     <!-- ======== PAGE SPECIFIC JAVASCRIPT ========= -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAzxr0Dw2QxUO8YcKQe0uK5272AAWbW20&callback=initMap"
-        type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAzxr0Dw2QxUO8YcKQe0uK5272AAWbW20&callback=initMap" type="text/javascript"></script>
 
     <script type="text/javascript" src="public/scripts/geolocation.js"></script>
     <!-- ===================== END PAGE SPECIFIC JAVASCRIPT ========= -->
